@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         final Spinner semester = (Spinner)findViewById(R.id.semester);
         final Spinner material = (Spinner)findViewById(R.id.material);
 
-
+        /*faculties*/
         ArrayAdapter facultyAdapter = ArrayAdapter.createFromResource(this,R.array.faculty,
                 android.R.layout.simple_spinner_dropdown_item);
         faculty.setAdapter(facultyAdapter);
@@ -29,43 +29,125 @@ public class MainActivity extends AppCompatActivity {
         faculty.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if(faculty.getSelectedItem().toString().equals("Politics and Economy")) {
+                /*Politics and Economy*/
+                if (faculty.getSelectedItem().toString().equals("Politics and Economy")) {
                     department.setVisibility(View.GONE);
                     year.setVisibility(View.VISIBLE);
                     ArrayAdapter yearAdapter = ArrayAdapter.createFromResource(MainActivity.this,
                             R.array.year, android.R.layout.simple_spinner_dropdown_item);
                     year.setAdapter(yearAdapter);
+                } else if (faculty.getSelectedItem().toString().equals("Fish resources and marine studies")) {
+                    department.setVisibility(View.VISIBLE);
+                    ArrayAdapter departmentAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                            R.array.departmentfr, android.R.layout.simple_spinner_dropdown_item);
+                    department.setAdapter(departmentAdapter);
+
+                } else if (faculty.getSelectedItem().toString().equals("Computers and information")) {
+                    department.setVisibility(View.GONE);
+                    year.setVisibility(View.VISIBLE);
+                    ArrayAdapter yearAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                            R.array.yearcs, android.R.layout.simple_spinner_dropdown_item);
+                    year.setAdapter(yearAdapter);
                 }
-                    }
+            }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
 
             }
                 });
+        /*departments*/
         department.setOnItemSelectedListener(
                 new AdapterView.OnItemSelectedListener() {
                     public void onItemSelected(
                             AdapterView<?> parent, View view, int position, long id) {
+                        /*Fish resources and marine studies*/
+                        if (faculty.getSelectedItem().toString().equals("Fish resources and marine studies")) {
+                            if (department.getSelectedItem().toString().equals("Ocean")) {
+                                year.setVisibility(View.VISIBLE);
+                                semester.setVisibility(View.GONE);
+                                ArrayAdapter yearAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.yearRF1, android.R.layout.simple_spinner_dropdown_item);
+                                year.setAdapter(yearAdapter);
+                            } else if (department.getSelectedItem().toString().equals("هندسة بحرية")) {
+                                year.setVisibility(View.VISIBLE);
+                                ArrayAdapter yearAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.yearRF2, android.R.layout.simple_spinner_dropdown_item);
+                                year.setAdapter(yearAdapter);
+                            } else if (department.getSelectedItem().toString().equals("مميز")) {
+                                year.setVisibility(View.VISIBLE);
+                                ArrayAdapter yearAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.yearRF, android.R.layout.simple_spinner_dropdown_item);
+                                year.setAdapter(yearAdapter);
+                            } else if (department.getSelectedItem().toString().equals("سلامة بحرية")) {
+                                year.setVisibility(View.GONE);
+                                semester.setVisibility(View.GONE);
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter yearAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.materialfr, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(yearAdapter);
+                            }
+                        }
                     }
 
                     public void onNothingSelected(AdapterView<?> parent) {
                     }
                 });
+        /*year*/
         year.setOnItemSelectedListener(
                 new AdapterView.OnItemSelectedListener() {
                     public void onItemSelected(
                             AdapterView<?> parent, View view, int position, long id) {
-                        if(year.getSelectedItem().toString().equals("first year P.E")) {
-                            semester.setVisibility(View.VISIBLE);
-                            ArrayAdapter semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
-                                    R.array.semesterpe1, android.R.layout.simple_spinner_dropdown_item);
-                            semester.setAdapter(semesterAdapter);
-                        }else if(year.getSelectedItem().toString().equals("second year P.E")) {
-                            semester.setVisibility(View.VISIBLE);
-                            ArrayAdapter semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
-                                    R.array.semesterpe2, android.R.layout.simple_spinner_dropdown_item);
-                            semester.setAdapter(semesterAdapter);
+                        /*Politics and Economy*/
+                        if(faculty.getSelectedItem().toString().equals("Politics and Economy")) {
+                            if (year.getSelectedItem().toString().equals("first year P.E")) {
+                                semester.setVisibility(View.VISIBLE);
+                                ArrayAdapter semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.semesterpe1, android.R.layout.simple_spinner_dropdown_item);
+                                semester.setAdapter(semesterAdapter);
+                            } else if (year.getSelectedItem().toString().equals("second year P.E")) {
+                                semester.setVisibility(View.VISIBLE);
+                                ArrayAdapter semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.semesterpe2, android.R.layout.simple_spinner_dropdown_item);
+                                semester.setAdapter(semesterAdapter);
+                            }
+                            /*Fish resources and marine studies*/
+                        }else if (faculty.getSelectedItem().toString().equals("Fish resources and marine studies")){
+                            if (year.getSelectedItem().toString().equals("First year F.R")){
+                                semester.setVisibility(View.GONE);
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.materialfr1, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(semesterAdapter);
+
+                            }
+                            else if (year.getSelectedItem().toString().equals("Second year F.R")){
+                                semester.setVisibility(View.VISIBLE);
+                                ArrayAdapter semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.semesterfr1, android.R.layout.simple_spinner_dropdown_item);
+                                semester.setAdapter(semesterAdapter);
+
+                            }
+                            else if (year.getSelectedItem().toString().equals("first year F.R")){
+                                semester.setVisibility(View.VISIBLE);
+                                ArrayAdapter semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.semesterfr11, android.R.layout.simple_spinner_dropdown_item);
+                                semester.setAdapter(semesterAdapter);
+
+                            }
+                            /*Computers and information*/
+                        }else if (faculty.getSelectedItem().toString().equals("Computers and information")) {
+                            if (year.getSelectedItem().toString().equals("first year C.S")) {
+                                semester.setVisibility(View.VISIBLE);
+                                ArrayAdapter semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.semestercs1, android.R.layout.simple_spinner_dropdown_item);
+                                semester.setAdapter(semesterAdapter);
+                            } else if (year.getSelectedItem().toString().equals("second year C.S")) {
+                                semester.setVisibility(View.VISIBLE);
+                                ArrayAdapter semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.semestercs2, android.R.layout.simple_spinner_dropdown_item);
+                                semester.setAdapter(semesterAdapter);
+                            }
                         }
                     }
 
@@ -73,25 +155,61 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                 });
+        /*semester*/
         semester.setOnItemSelectedListener(
                 new AdapterView.OnItemSelectedListener() {
                     public void onItemSelected(
                             AdapterView<?> parent, View view, int position, long id) {
-                        if(semester.getSelectedItem().toString().equals("first semester Y1")) {
-                            material.setVisibility(View.VISIBLE);
-                            ArrayAdapter materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
-                                    R.array.materialpe11,android.R.layout.simple_spinner_dropdown_item);
-                            material.setAdapter(materialAdapter);
-                        }else if(semester.getSelectedItem().toString().equals("second semester Y1")) {
-                            material.setVisibility(View.VISIBLE);
-                            ArrayAdapter materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
-                                    R.array.materialpe12,android.R.layout.simple_spinner_dropdown_item);
-                            material.setAdapter(materialAdapter);
-                        }else if(semester.getSelectedItem().toString().equals("first semester Y2")) {
-                            material.setVisibility(View.VISIBLE);
-                            ArrayAdapter materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
-                                    R.array.materialpe21,android.R.layout.simple_spinner_dropdown_item);
-                            material.setAdapter(materialAdapter);
+                        /*Politics and Economy*/
+                        if (faculty.getSelectedItem().toString().equals("Politics and Economy")) {
+                            if (semester.getSelectedItem().toString().equals("first semester Y1")) {
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.materialpe11, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(materialAdapter);
+                            } else if (semester.getSelectedItem().toString().equals("second semester Y1")) {
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.materialpe12, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(materialAdapter);
+                            } else if (semester.getSelectedItem().toString().equals("first semester Y2")) {
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.materialpe21, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(materialAdapter);
+                            }
+                            /*Fish resources and marine studies*/
+                        }else if (faculty.getSelectedItem().toString().equals("Fish resources and marine studies")){
+                            if(semester.getSelectedItem().toString().equals("first semester - second year")) {
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.materialfr112,android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(materialAdapter);
+                            }
+                            else if(semester.getSelectedItem().toString().equals("first semester - first year")) {
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.materialfr11,android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(materialAdapter);
+                            }
+                            /*Computers and information*/
+                        }else if (faculty.getSelectedItem().toString().equals("Computers and information")) {
+                            if (semester.getSelectedItem().toString().equals("first semester Y1-C.S")) {
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.materialcs11, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(materialAdapter);
+                            } else if (semester.getSelectedItem().toString().equals("second semester Y1-C.S")) {
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.materialcs12, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(materialAdapter);
+                            } else if (semester.getSelectedItem().toString().equals("first semester Y2-C.S")) {
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.materialcs21, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(materialAdapter);
+                            }
                         }
                     }
 
@@ -99,62 +217,226 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                 });
+        /*material*/
         material.setOnItemSelectedListener(
                 new AdapterView.OnItemSelectedListener() {
                     public void onItemSelected(
                             AdapterView<?> parent, View view, int position, long id) {
-                        if(material.getSelectedItem().toString().equals("مبادئ القانون 1")){
-                            Intent i = new Intent(MainActivity.this,study.class);
-                            i.putExtra("url","https://drive.google.com/drive/folders/0B71nZ7yuupSCdFY2NF96NVFoQVU");
-                            startActivity(i);
-                        }else if(material.getSelectedItem().toString().equals("مبادئ العلوم السياسة")){
-                            Intent i = new Intent(MainActivity.this,study.class);
-                            i.putExtra("url","https://drive.google.com/drive/folders/0B71nZ7yuupSCLS15d1Juc0dENEk");
-                            startActivity(i);
-                        }else if(material.getSelectedItem().toString().equals("مبادئ السلوك التنظيمى")){
-                            Intent i = new Intent(MainActivity.this,study.class);
-                            i.putExtra("url","https://drive.google.com/drive/folders/0B71nZ7yuupSCLU5IdmNodXFBOXM");
-                            startActivity(i);
-                        }else if(material.getSelectedItem().toString().equals("اقتصاد جزئى")){
-                            Intent i = new Intent(MainActivity.this,study.class);
-                            i.putExtra("url","https://drive.google.com/drive/folders/0B71nZ7yuupSCLW5FdEVHdXk2a2M");
-                            startActivity(i);
-                        }else if(material.getSelectedItem().toString().equals("امتحانات 1")){
-                            Intent i = new Intent(MainActivity.this,study.class);
-                            i.putExtra("url","https://drive.google.com/drive/folders/0B71nZ7yuupSCLUpjaTVSYmRCaGs");
-                            startActivity(i);
-                        }else if(material.getSelectedItem().toString().equals("مبادئ القانون 2")){
-                            Intent i = new Intent(MainActivity.this,study.class);
-                            i.putExtra("url","https://drive.google.com/drive/folders/0B71nZ7yuupSCLU5lNnBld1BkVW8");
-                            startActivity(i);
-                        }else if(material.getSelectedItem().toString().equals("مبادئ احصاء")){
-                            Intent i = new Intent(MainActivity.this,study.class);
-                            i.putExtra("url","https://drive.google.com/drive/folders/0B71nZ7yuupSCLUZLVmJENmVsYW8");
-                            startActivity(i);
-                        }else if(material.getSelectedItem().toString().equals("حقوق انسان")){
-                            Intent i = new Intent(MainActivity.this,study.class);
-                            i.putExtra("url","https://drive.google.com/drive/folders/0B71nZ7yuupSCLVZWSmRMb0d5Smc");
-                            startActivity(i);
-                        }else if(material.getSelectedItem().toString().equals("الادارة العامة")){
-                            Intent i = new Intent(MainActivity.this,study.class);
-                            i.putExtra("url","https://drive.google.com/drive/folders/0B71nZ7yuupSCLVFyUEhzVElVYVU");
-                            startActivity(i);
-                        }else if(material.getSelectedItem().toString().equals("اقتصاد كلى")){
-                            Intent i = new Intent(MainActivity.this,study.class);
-                            i.putExtra("url","https://drive.google.com/drive/folders/0B71nZ7yuupSCLVZfUHhncGM3UXM");
-                            startActivity(i);
-                        }else if(material.getSelectedItem().toString().equals("international organization")){
-                            Intent i = new Intent(MainActivity.this,study.class);
-                            i.putExtra("url","https://drive.google.com/drive/folders/0B71nZ7yuupSCLVVGYjJIUmgwMlE");
-                            startActivity(i);
-                        }else if(material.getSelectedItem().toString().equals("امتحانات 2")){
-                            Intent i = new Intent(MainActivity.this,study.class);
-                            i.putExtra("url","https://drive.google.com/drive/folders/0B71nZ7yuupSCLW5hVGd1N3pqcjQ");
-                            startActivity(i);
-                        }else if(material.getSelectedItem().toString().equals("امتحان اقتصاد")){
-                            Intent i = new Intent(MainActivity.this,study.class);
-                            i.putExtra("url","https://drive.google.com/drive/folders/1-1BCTt6cZxAxQZ-9he2esNYisgNFspmu");
-                            startActivity(i);
+                        /*Politics and Economy*/
+                        if (faculty.getSelectedItem().toString().equals("Politics and Economy")) {
+                            if (material.getSelectedItem().toString().equals("مبادئ القانون 1")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0B71nZ7yuupSCdFY2NF96NVFoQVU");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("مبادئ العلوم السياسة")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0B71nZ7yuupSCLS15d1Juc0dENEk");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("مبادئ السلوك التنظيمى")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0B71nZ7yuupSCLU5IdmNodXFBOXM");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("اقتصاد جزئى")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0B71nZ7yuupSCLW5FdEVHdXk2a2M");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("امتحانات 1")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0B71nZ7yuupSCLUpjaTVSYmRCaGs");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("مبادئ القانون 2")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0B71nZ7yuupSCLU5lNnBld1BkVW8");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("مبادئ احصاء")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0B71nZ7yuupSCLUZLVmJENmVsYW8");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("حقوق انسان")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0B71nZ7yuupSCLVZWSmRMb0d5Smc");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("الادارة العامة")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0B71nZ7yuupSCLVFyUEhzVElVYVU");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("اقتصاد كلى")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0B71nZ7yuupSCLVZfUHhncGM3UXM");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("international organization")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0B71nZ7yuupSCLVVGYjJIUmgwMlE");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("امتحانات 2")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0B71nZ7yuupSCLW5hVGd1N3pqcjQ");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("امتحان اقتصاد")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/1-1BCTt6cZxAxQZ-9he2esNYisgNFspmu");
+                                startActivity(i);
+                            }
+                            /*Fish resources and marine studies*/
+                        } else if (faculty.getSelectedItem().toString().equals("Fish resources and marine studies")){
+                            if (material.getSelectedItem().toString().equals("final oceanography")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/open?id=1nWnuAB3orMucrw8K1cuqn7um6sY_fFFf");
+                                startActivity(i);
+                            }
+                            else if (material.getSelectedItem().toString().equals("فلك وأرصاد جوية")){
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/open?id=18OTLPuLL-Na4VG9WWNW52SGqve77gyH9");
+                                startActivity(i);
+
+                            }
+                            else if (material.getSelectedItem().toString().equals("بحيرات")){
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/open?id=1y89UHfyCaZAgkwnra30FAymDSIskNlja");
+                                startActivity(i);
+
+                            }else if (material.getSelectedItem().toString().equals("MidTerm")){
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/open?id=1P9oinJETZoRASPIcVy6Y9xTGBWcS2ZWG");
+                                startActivity(i);
+
+                            }
+                            else if (material.getSelectedItem().toString().equals("Exams1")){
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/open?id=1LF64vl-ZfjO-jwe29bnruZWTIrSCHNdO");
+                                startActivity(i);
+
+                            }
+                            else if (material.getSelectedItem().toString().equals("Exams2")){
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/open?id=1TE26J2WqvHjizB9SUGdaKs8Ws8IJQ-Js");
+                                startActivity(i);
+
+                            }
+                            else if (material.getSelectedItem().toString().equals("Exams")){
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/open?id=1q20dfK13htE1YhCXBMKqqra-1MWMVOVp");
+                                startActivity(i);
+
+                            } else if (material.getSelectedItem().toString().equals("فلك وارصاد جوية")){
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/open?id=18OTLPuLL-Na4VG9WWNW52SGqve77gyH9");
+                                startActivity(i);
+
+                            }
+                            else if (material.getSelectedItem().toString().equals("بحيـرات")){
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/open?id=1y89UHfyCaZAgkwnra30FAymDSIskNlja");
+                                startActivity(i);
+
+                            }
+                            else if (material.getSelectedItem().toString().equals("Caga culture")){
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/open?id=0Bx1TXZ-UjRguYlo3NWFET1RadGM");
+                                startActivity(i);
+
+                            }
+                            else if (material.getSelectedItem().toString().equals("تسويق")){
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/open?id=0B9nviOTHpzByeFdpdko1Ny1UcXM");
+                                startActivity(i);
+
+                            }
+                            else if (material.getSelectedItem().toString().equals("Caga culture-fourth year")){
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/open?id=0Bx1TXZ-UjRguaGRrNHJJa01CSnc");
+                                startActivity(i);
+
+                            }
+                            /*Computers and information*/
+                        }else if (faculty.getSelectedItem().toString().equals("Computers and information")) {
+                            if (material.getSelectedItem().toString().equals("Physics1 Dr.Yasser Amoun ملخصات المادة")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/0ByJz1l2rodbFTVlpOEdZdlJJWmM");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Physics1 Dr.Yasser Amoun ملخصات السكاشن")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/0ByJz1l2rodbFMnNlWk4xM1M0Qlk");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Math1 Dr.Mohamed Ramadan")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/0ByJz1l2rodbFSjN2NnoxTGN2UjA");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("General English Dr.Dosoky")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/0ByJz1l2rodbFZ0NaZUpEMjJ4N0k");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Programming Dr.Mohammed Ali")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/0ByJz1l2rodbFY01nMlZTTEt6bGM");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Mathematics2 Dr.Taha El-Garib")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/0ByJz1l2rodbFUWd0UlZDVjA1bFk");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("English writing Dr.Dosoky")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/0ByJz1l2rodbFRUpOTloxN1dydlE");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Discrete structure Dr.Hussein Sharaf")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/0ByJz1l2rodbFUW1RYUhxVl9HLVE");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Cables")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/1_4TNzdTh-H6GWT-plDMO4clpaISOBUwA");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Communication")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/1yexQTZj0ADIPxVtq0akMJZIUeNyNSSbg");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("IP adress")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/12RI9VYznM5tbafheV2VBqFzLgJW25ES_");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Is امتحانات")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/1uiAfeScfWpFXZdGhC_5toGb-izWTLIO6");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Laplace transformation")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/1l_3IWgxIKVc7wotlFkGE7xA7E3Y0MkUs");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("maths Dr.Mohammed Saleh امتحانات")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/1QRgHev21L5oB0KYU2ZPqxDro-vYqbMB6");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("maths 3 fouri series")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/1gTWol5njJaY9YTAj9UMGYTyzqw6bZBaK");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("الأعداد المركبة maths 3")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/1aa6mv-brReV_cUIShequ7Mekjo2QmqNv");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("System analysis")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/1PpHQpO7OIfl42aYJ-geHRuJKdDlwAJ3X");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("امتحانات دكتور هيثم")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/1dSXTZ8mQMjvW86irDapdj5c-wnoSkQvC");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Business")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/1CnDW5EZXLhpGuQqvhmJHVGICRXl64q4Q");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("definition of Java")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/1CnDW5EZXLhpGuQqvhmJHVGICRXl64q4Q");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("امتحانات تانية حاسبات")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/1CnDW5EZXLhpGuQqvhmJHVGICRXl64q4Q");
+                                startActivity(i);
+
+
+                        }
                         }
                     }
 

@@ -12,9 +12,7 @@
         <item>Politics and Economy</item>
     </string-array>
 
-    <string-array name="department">
-    </string-array>
-
+<!--Politics and Economy-->
     <string-array name="year">
         <item>Choose the year...</item>
         <item>first year P.E</item>
@@ -56,4 +54,114 @@
         <item>اختر المادة...</item>
         <item>امتحان اقتصاد</item>
     </string-array>
+
+<!--Fish resources and marine studies-->
+    <string-array name="departmentfr">
+        <item>Choose the department...</item>
+        <item>Ocean</item>
+        <item>هندسة بحرية</item>
+        <item>مميز</item>
+        <item>سلامة بحرية</item>
+    </string-array>
+
+    <string-array name="yearRF">
+        <item>Choose the year...</item>
+        <item>first year F.R</item>
+    </string-array>
+
+    <string-array name="yearRF1">
+        <item>Choose the year...</item>
+        <item>First year F.R</item>
+    </string-array>
+
+    <string-array name="yearRF2">
+        <item>Choose the year...</item>
+        <item>Second year F.R</item>
+    </string-array>
+
+    <string-array name="semesterfr1">
+        <item>Choose the semester...</item>
+        <item>first semester - second year</item>
+    </string-array>
+
+    <string-array name="semesterfr11">
+        <item>Choose the semester...</item>
+        <item>first semester - first year</item>
+    </string-array>
+
+    <string-array name="materialfr112">
+        <item>اختر المادة...</item>
+        <item>MidTerm</item>
+        <item>Exams1</item>
+        <item>Exams2</item>
+    </string-array>
+
+    <string-array name="materialfr11">
+        <item>اختر المادة...</item>
+        <item>Exams</item>
+        <item>فلك وارصاد جوية</item>
+        <item>بحيـرات</item>
+    </string-array>
+
+    <string-array name="materialfr">
+        <item>اختر المادة...</item>
+        <item>Caga culture</item>
+        <item>Caga culture-fourth year</item>
+        <item>تسويق</item>
+    </string-array>
+
+    <string-array name="materialfr1">
+        <item>اختر المادة...</item>
+        <item>final oceanography</item>
+        <item>فلك وأرصاد جوية</item>
+        <item>بحيرات</item>
+    </string-array>
+
+<!--Computers and information-->
+    <string-array name="yearcs">
+        <item>Choose the year...</item>
+        <item>first year C.S</item>
+        <item>second year C.S</item>
+    </string-array>
+
+    <string-array name="semestercs1">
+        <item>Choose the semester...</item>
+        <item>first semester Y1-C.S</item>
+        <item>second semester Y1-C.S</item>
+    </string-array>
+
+    <string-array name="semestercs2">
+        <item>Choose the semester...</item>
+        <item>first semester Y2-C.S</item>
+    </string-array>
+
+    <string-array name="materialcs11">
+        <item>Choose the material...</item>
+        <item>Physics1 Dr.Yasser Amoun</item>
+        <item>Math1 Dr.Mohamed Ramadan</item>
+        <item>General English Dr.Dosoky</item>
+    </string-array>
+
+    <string-array name="materialcs12">
+        <item>Choose the material...</item>
+        <item>Programming Dr.Mohammed Ali</item>
+        <item>Mathematics2 Dr.Taha El-Garib </item>
+        <item>English writing Dr.Dosoky</item>
+        <item>Discrete structure Dr.Hussein Sharaf</item>
+    </string-array>
+
+    <string-array name="materialcs21">
+        <item>Choose the material...</item>
+        <item>Cables</item>
+        <item>Communication</item>
+        <item>IP adress</item>
+        <item>Is امتحانات</item>
+        <item>Laplace transformation</item>
+        <item> maths Dr.Mohammed Saleh امتحانات</item>
+        <item>maths 3 fouri series</item>
+        <item>الأعداد المركبة maths 3</item>
+        <item>System analysis</item>
+        <item>امتحانات دكتور هيثم</item>
+    </string-array>
+
 </resources>

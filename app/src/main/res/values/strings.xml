@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">mozkra</string>
+    <string name="our_gratitute_to_every_single_person_who_shared_us_study_sources">Our Gratitute to every single person who shared us study sources.</string>
+    <string name="todo">TODO</string>
 
     <string-array name="faculty">
         <item>Choose your Faculty .... </item>
@@ -154,7 +156,7 @@
         <item>Choose the material...</item>
         <item>Cables</item>
         <item>Communication</item>
-        <item>IP adress</item>
+        <!--<item>IP adress</item>-->
         <item>Is امتحانات</item>
         <item>Laplace transformation</item>
         <item> maths Dr.Mohammed Saleh امتحانات</item>
@@ -162,6 +164,9 @@
         <item>الأعداد المركبة maths 3</item>
         <item>System analysis</item>
         <item>امتحانات دكتور هيثم</item>
+        <item>Business</item>
+        <item>definition of Java</item>
+        <item>امتحانات تانية حاسبات</item>
     </string-array>
 
 <!--Petroleum and Mining Engineering Faculty-->
@@ -252,7 +257,7 @@
         <item>التاريخ الهندسي</item>
         <item>رسم هندسي</item>
         <item>فيزياء1</item>
-        <item>كيمياء</item>
+        <!--<item>كيمياء</item>-->
     </string-array>
 
     <string-array name="pme_preparatory_secondSemester_material">

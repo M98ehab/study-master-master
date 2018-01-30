@@ -5,8 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:ignore="ExtraText">
+    tools:ignore="ExtraText"><![CDATA[
     tools:context="com.mohamed.mozkra.MainActivity">
+
+    ]]>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@mipmap/suez" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/our_gratitute_to_every_single_person_who_shared_us_study_sources"
+        android:textColor="?attr/actionModeSplitBackground"
+        android:textSize="18sp"
+        android:textStyle="italic" />
 
     <Spinner
         android:id="@+id/faculty"
@@ -14,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="30dp"
         android:contextClickable="false"
         tools:ignore="ObsoleteLayoutParam,UnusedAttribute"
         tools:layout_editor_absoluteX="8dp"
@@ -26,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/faculty"
-        android:layout_marginTop="63dp"
+        android:layout_marginTop="30dp"
         android:contextClickable="false"
         android:visibility="invisible"
         tools:ignore="ObsoleteLayoutParam,UnusedAttribute"
@@ -39,7 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/semester"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="30dp"
         android:contextClickable="false"
         android:visibility="invisible"
         tools:ignore="ObsoleteLayoutParam,UnusedAttribute"
@@ -52,7 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/material"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="30dp"
         android:contextClickable="false"
         android:visibility="invisible"
         tools:ignore="ObsoleteLayoutParam,UnusedAttribute"
@@ -65,10 +87,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:contextClickable="false"
         android:visibility="invisible"
         tools:ignore="ObsoleteLayoutParam,UnusedAttribute"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="58dp" />
+
 </LinearLayout>

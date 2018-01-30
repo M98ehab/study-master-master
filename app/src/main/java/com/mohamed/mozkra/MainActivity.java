@@ -460,70 +460,70 @@ public class MainActivity extends AppCompatActivity {
                         } else if (faculty.getSelectedItem().toString().equals("Fish resources and marine studies")){
                             if (material.getSelectedItem().toString().equals("final oceanography")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/open?id=1nWnuAB3orMucrw8K1cuqn7um6sY_fFFf");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?service=wise&passive=1209600&continue=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1nWnuAB3orMucrw8K1cuqn7um6sY_fFFf%2Fview%3Fusp%3Ddrive_web&hl=ar&followup=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1nWnuAB3orMucrw8K1cuqn7um6sY_fFFf%2Fview%3Fusp%3Ddrive_web&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             }
                             else if (material.getSelectedItem().toString().equals("فلك وأرصاد جوية")){
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/open?id=18OTLPuLL-Na4VG9WWNW52SGqve77gyH9");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?service=wise&passive=1209600&continue=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F18OTLPuLL-Na4VG9WWNW52SGqve77gyH9%2Fview%3Fusp%3Ddrive_web&hl=ar&followup=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F18OTLPuLL-Na4VG9WWNW52SGqve77gyH9%2Fview%3Fusp%3Ddrive_web&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
 
                             }
                             else if (material.getSelectedItem().toString().equals("بحيرات")){
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/open?id=1y89UHfyCaZAgkwnra30FAymDSIskNlja");
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://drive.google.com/file/d/1y89UHfyCaZAgkwnra30FAymDSIskNlja/view?usp%3Ddrive_web&hl=ar&followup=https://drive.google.com/file/d/1y89UHfyCaZAgkwnra30FAymDSIskNlja/view?usp%3Ddrive_web");
                                 startActivity(i);
 
                             }else if (material.getSelectedItem().toString().equals("MidTerm")){
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/open?id=1P9oinJETZoRASPIcVy6Y9xTGBWcS2ZWG");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?service=wise&passive=1209600&continue=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1P9oinJETZoRASPIcVy6Y9xTGBWcS2ZWG%2Fview%3Fusp%3Ddrive_web&hl=ar&followup=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1P9oinJETZoRASPIcVy6Y9xTGBWcS2ZWG%2Fview%3Fusp%3Ddrive_web&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
 
                             }
                             else if (material.getSelectedItem().toString().equals("Exams1")){
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/open?id=1LF64vl-ZfjO-jwe29bnruZWTIrSCHNdO");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?service=wise&passive=1209600&continue=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1LF64vl-ZfjO-jwe29bnruZWTIrSCHNdO%2Fview%3Fusp%3Ddrive_web&hl=ar&followup=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1LF64vl-ZfjO-jwe29bnruZWTIrSCHNdO%2Fview%3Fusp%3Ddrive_web&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
 
                             }
                             else if (material.getSelectedItem().toString().equals("Exams2")){
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/open?id=1TE26J2WqvHjizB9SUGdaKs8Ws8IJQ-Js");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?service=wise&passive=1209600&continue=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1TE26J2WqvHjizB9SUGdaKs8Ws8IJQ-Js%2Fview%3Fusp%3Ddrive_web&hl=ar&followup=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1TE26J2WqvHjizB9SUGdaKs8Ws8IJQ-Js%2Fview%3Fusp%3Ddrive_web&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
 
                             }
                             else if (material.getSelectedItem().toString().equals("Exams")){
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/open?id=1q20dfK13htE1YhCXBMKqqra-1MWMVOVp");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?service=wise&passive=1209600&continue=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1q20dfK13htE1YhCXBMKqqra-1MWMVOVp%2Fview%3Fusp%3Ddrive_web&hl=ar&followup=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1q20dfK13htE1YhCXBMKqqra-1MWMVOVp%2Fview%3Fusp%3Ddrive_web&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
 
                             } else if (material.getSelectedItem().toString().equals("فلك وارصاد جوية")){
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/open?id=18OTLPuLL-Na4VG9WWNW52SGqve77gyH9");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?service=wise&passive=1209600&continue=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F18OTLPuLL-Na4VG9WWNW52SGqve77gyH9%2Fview%3Fusp%3Ddrive_web&hl=ar&followup=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F18OTLPuLL-Na4VG9WWNW52SGqve77gyH9%2Fview%3Fusp%3Ddrive_web&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
 
                             }
                             else if (material.getSelectedItem().toString().equals("بحيـرات")){
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/open?id=1y89UHfyCaZAgkwnra30FAymDSIskNlja");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?service=wise&passive=1209600&continue=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1y89UHfyCaZAgkwnra30FAymDSIskNlja%2Fview%3Fusp%3Ddrive_web&hl=ar&followup=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1y89UHfyCaZAgkwnra30FAymDSIskNlja%2Fview%3Fusp%3Ddrive_web&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
 
                             }
                             else if (material.getSelectedItem().toString().equals("Caga culture")){
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/open?id=0Bx1TXZ-UjRguYlo3NWFET1RadGM");
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://drive.google.com/file/d/0Bx1TXZ-UjRguYlo3NWFET1RadGM/view?usp%3Ddrive_web&hl=ar&followup=https://drive.google.com/file/d/0Bx1TXZ-UjRguYlo3NWFET1RadGM/view?usp%3Ddrive_web");
                                 startActivity(i);
 
                             }
                             else if (material.getSelectedItem().toString().equals("تسويق")){
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/open?id=0B9nviOTHpzByeFdpdko1Ny1UcXM");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?service=wise&passive=1209600&continue=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F0B9nviOTHpzByeFdpdko1Ny1UcXM%2Fview%3Fusp%3Ddrive_web&hl=ar&followup=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F0B9nviOTHpzByeFdpdko1Ny1UcXM%2Fview%3Fusp%3Ddrive_web&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
 
                             }
                             else if (material.getSelectedItem().toString().equals("Caga culture-fourth year")){
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/open?id=0Bx1TXZ-UjRguaGRrNHJJa01CSnc");
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://drive.google.com/file/d/0Bx1TXZ-UjRguaGRrNHJJa01CSnc/view?usp%3Ddrive_web&hl=ar&followup=https://drive.google.com/file/d/0Bx1TXZ-UjRguaGRrNHJJa01CSnc/view?usp%3Ddrive_web");
                                 startActivity(i);
 
                             }
@@ -531,474 +531,474 @@ public class MainActivity extends AppCompatActivity {
                         }else if (faculty.getSelectedItem().toString().equals("Computers and information")) {
                             if (material.getSelectedItem().toString().equals("Physics1 Dr.Yasser Amoun ملخصات المادة")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/0ByJz1l2rodbFTVlpOEdZdlJJWmM");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0ByJz1l2rodbFTVlpOEdZdlJJWmM&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Physics1 Dr.Yasser Amoun ملخصات السكاشن")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/0ByJz1l2rodbFMnNlWk4xM1M0Qlk");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0ByJz1l2rodbFMnNlWk4xM1M0Qlk&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Math1 Dr.Mohamed Ramadan")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/0ByJz1l2rodbFSjN2NnoxTGN2UjA");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0ByJz1l2rodbFSjN2NnoxTGN2UjA&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("General English Dr.Dosoky")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/0ByJz1l2rodbFZ0NaZUpEMjJ4N0k");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0ByJz1l2rodbFZ0NaZUpEMjJ4N0k&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Programming Dr.Mohammed Ali")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/0ByJz1l2rodbFY01nMlZTTEt6bGM");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0ByJz1l2rodbFY01nMlZTTEt6bGM&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Mathematics2 Dr.Taha El-Garib")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/0ByJz1l2rodbFUWd0UlZDVjA1bFk");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0ByJz1l2rodbFUWd0UlZDVjA1bFk&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("English writing Dr.Dosoky")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/0ByJz1l2rodbFRUpOTloxN1dydlE");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0ByJz1l2rodbFRUpOTloxN1dydlE&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Discrete structure Dr.Hussein Sharaf")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/0ByJz1l2rodbFUW1RYUhxVl9HLVE");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0ByJz1l2rodbFUW1RYUhxVl9HLVE&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Cables")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/1_4TNzdTh-H6GWT-plDMO4clpaISOBUwA");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1_4TNzdTh-H6GWT-plDMO4clpaISOBUwA&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Communication")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/1yexQTZj0ADIPxVtq0akMJZIUeNyNSSbg");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1yexQTZj0ADIPxVtq0akMJZIUeNyNSSbg&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("IP adress")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/12RI9VYznM5tbafheV2VBqFzLgJW25ES_");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F12RI9VYznM5tbafheV2VBqFzLgJW25ES_%3Fpli%3D1&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Is امتحانات")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/1uiAfeScfWpFXZdGhC_5toGb-izWTLIO6");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1uiAfeScfWpFXZdGhC_5toGb-izWTLIO6&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Laplace transformation")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/1l_3IWgxIKVc7wotlFkGE7xA7E3Y0MkUs");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1l_3IWgxIKVc7wotlFkGE7xA7E3Y0MkUs&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("maths Dr.Mohammed Saleh امتحانات")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/1QRgHev21L5oB0KYU2ZPqxDro-vYqbMB6");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1QRgHev21L5oB0KYU2ZPqxDro-vYqbMB6&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("maths 3 fouri series")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/1gTWol5njJaY9YTAj9UMGYTyzqw6bZBaK");
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/1gTWol5njJaY9YTAj9UMGYTyzqw6bZBaK&service=writely");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("الأعداد المركبة maths 3")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/1aa6mv-brReV_cUIShequ7Mekjo2QmqNv");
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/1aa6mv-brReV_cUIShequ7Mekjo2QmqNv&service=writely");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("System analysis")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/1PpHQpO7OIfl42aYJ-geHRuJKdDlwAJ3X");
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/1PpHQpO7OIfl42aYJ-geHRuJKdDlwAJ3X&service=writely");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("امتحانات دكتور هيثم")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/1dSXTZ8mQMjvW86irDapdj5c-wnoSkQvC");
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/1dSXTZ8mQMjvW86irDapdj5c-wnoSkQvC&service=writely");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Business")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/1CnDW5EZXLhpGuQqvhmJHVGICRXl64q4Q");
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/1CnDW5EZXLhpGuQqvhmJHVGICRXl64q4Q%3Fpli%3D1&service=writely");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("definition of Java")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/1CnDW5EZXLhpGuQqvhmJHVGICRXl64q4Q");
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/1CnDW5EZXLhpGuQqvhmJHVGICRXl64q4Q&service=writely");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("امتحانات تانية حاسبات")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/1CnDW5EZXLhpGuQqvhmJHVGICRXl64q4Q");
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/1CnDW5EZXLhpGuQqvhmJHVGICRXl64q4Q&service=writely");
                                 startActivity(i);
                         }
                         /*Petroleum and Mining Engineering Faculty*/
                         }else if (faculty.getSelectedItem().toString().equals("Petroleum and Mining Engineering Faculty")) {
                             if (material.getSelectedItem().toString().equals("Calculus")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvYkJVQzB4cWJickk");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvYkJVQzB4cWJickk&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("هندسة تحليلية")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvUmdEcUdjcEprSDg");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvUmdEcUdjcEprSDg&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("استاتيكا")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvdlFreXl1OFlrbnc");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvdlFreXl1OFlrbnc&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("التاريخ الهندسي")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvRElmeWFOUUdyRzA");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvRElmeWFOUUdyRzA&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("رسم هندسي")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvVGQ3OGc3YnhmeU0");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvVGQ3OGc3YnhmeU0&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("فيزياء1")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvTkhJNDdCSkNDWDQ");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvTkhJNDdCSkNDWDQ&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("كيمياء")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvSFJ1YXp6Y0t6eDQ");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvSFJ1YXp6Y0t6eDQ&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("تكامل")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKveXdnNGFHWVN3ajQ");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKveXdnNGFHWVN3ajQ&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("لغة")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvVE1iX1NXZzZhclE");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvVE1iX1NXZzZhclE&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("انتاج")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvelpTWVAzN0xRekk");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvelpTWVAzN0xRekk&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("رسم و إسقاط")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvSnlSODhhSzRneHM");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvSnlSODhhSzRneHM&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("سليدات الديناميكا")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvQVlHbG9tZ2twdzQ");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvQVlHbG9tZ2twdzQ&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("سليدات كهربية و مغناطيسية")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvSGNSZENtSVZMeTQ");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvSGNSZENtSVZMeTQ&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("English")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvMFR3b1NNOVNwNHM");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvMFR3b1NNOVNwNHM&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Maths 3")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvaVc5NXh2TG5abk0");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvaVc5NXh2TG5abk0&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Matlab")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvbnZiRUQtYXFuSEE");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvbnZiRUQtYXFuSEE&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Plane and Topographic Surveying")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvazBuNERCSWNFRTQ");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvazBuNERCSWNFRTQ&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Quantum Physics")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvU1ZQZHg2OHhzNnc");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvU1ZQZHg2OHhzNnc&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Strength")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvNG1zX1haVXIwZWs");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvNG1zX1haVXIwZWs&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Structure")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvSnJxQWNyOG1QR1k");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvSnJxQWNyOG1QR1k&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Geology")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvU29WTi1jYXpPcEE");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvU29WTi1jYXpPcEE&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Introduction to Petroleum Engineering")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvaWdodWlnZ1pOdG8");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvaWdodWlnZ1pOdG8&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Maths")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvRjZaMDNrMFlIaVU");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvRjZaMDNrMFlIaVU&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Mechanical Drawing")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvQjZ5Zl82UHpvbEE");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvQjZ5Zl82UHpvbEE&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Organic Chemstry")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvMWJsZUM2RE1Gd2s");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvMWJsZUM2RE1Gd2s&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Physical Chemstry")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvTGM3N2N3eWF5REk");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvTGM3N2N3eWF5REk&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Sustainability and Environmental Education")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvSndlTHJJWDFZT2c");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvSndlTHJJWDFZT2c&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Drilling 1")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvRjZZaEZHUDhGTjA");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvRjZZaEZHUDhGTjA&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Fluid Mechanics")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvRWxlR2hveUlCYms");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvRWxlR2hveUlCYms&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Material Science")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvbGFGbjQ3WnU1c1U");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvbGFGbjQ3WnU1c1U&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Statistics and Probability")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvUDg5ZUFBSTZxTGc");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvUDg5ZUFBSTZxTGc&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Structural Geology")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvYXJrUkFjQzFHS1E");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvYXJrUkFjQzFHS1E&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Automatic Control")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvSC16MUttMlpaZ3c");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvSC16MUttMlpaZ3c&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Computer Engineering")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvWUlkUGFDRzBlbFU");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvWUlkUGFDRzBlbFU&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Electrical Engineering")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvRDFoTHBRM0pnVUk");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvRDFoTHBRM0pnVUk&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Reservoir Fluids")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvZXJCMTRVWjZRNGs");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvZXJCMTRVWjZRNGs&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Thermodynamics")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvZGEzYl83eG1mMkU");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvZGEzYl83eG1mMkU&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Computer Applications")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvZkI2c2g4WDQ3Q1U");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvZkI2c2g4WDQ3Q1U&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Geophisics")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKveUtjY24tcGJQNEU");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKveUtjY24tcGJQNEU&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Hydraulics")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvMVkxT0hMMENsLTg");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvMVkxT0hMMENsLTg&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Production Engineering 1")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvQ0J5bzdiWlJOS00");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvQ0J5bzdiWlJOS00&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Production Equipment")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvaFZQLUxKV2FSSHM");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvaFZQLUxKV2FSSHM&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Rock Properties")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvTzNmLUpmYlpGVGc");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvTzNmLUpmYlpGVGc&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Drilling 2")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvNzdqTDlWQUthLTg");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvNzdqTDlWQUthLTg&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Drilling Equipment")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvU1MxVFBvaE9wNVk");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvU1MxVFBvaE9wNVk&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Exploration Engineering")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvelZJcGUySElsajA");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvelZJcGUySElsajA&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Language.")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvdGc3TGZtc1ZsUm8");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvdGc3TGZtc1ZsUm8&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Safety")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvdjRLa2JjbHBaOVE");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvdjRLa2JjbHBaOVE&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Well Completion")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvVDhkdkZUWm9iUG8");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvVDhkdkZUWm9iUG8&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Sections")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvMml1ZnVWS1VRdzQ");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvMml1ZnVWS1VRdzQ&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Petroleum Economics")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvWnV3amFmd3ZHN3M");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvWnV3amFmd3ZHN3M&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Petroleum Geology")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvLU56aERMWnAtekU");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvLU56aERMWnAtekU&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Production Engineering 2")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvY3dkNnFMMG5KQnc");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvY3dkNnFMMG5KQnc&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Transportation and Storage of Crude Oil")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvUWlXSzRxaEJoQWc");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvUWlXSzRxaEJoQWc&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Well Simulation")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvNUEwYnFJRFRkRGM");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvNUEwYnFJRFRkRGM&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Applied Reservoir Engineering")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvWWJiOUR4SlBzUXc");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvWWJiOUR4SlBzUXc&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Enhanced Oil Recovery (EOR)")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvWjI0UWR2cmRnYjg");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvWjI0UWR2cmRnYjg&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Environmental Control in Oil and Gas Industry")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvSTNFQlNLZ0xBY3M");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvSTNFQlNLZ0xBY3M&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Natural Gas Engineering")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvYjlYcWxYOVFNZDg");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvYjlYcWxYOVFNZDg&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Well Logging")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvTzRqYlYzTjUwelU");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvTzRqYlYzTjUwelU&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("مدخل تكرير")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvSnRJU01kcXdnVlU");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvSnRJU01kcXdnVlU&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Physical Chemsrty")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvellBUTA3ckx3bFk");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvellBUTA3ckx3bFk&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Petroleum Evaluation")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvNWNZRklUVXFKSzg");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvNWNZRklUVXFKSzg&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Unit Operations 1")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvbjAxdV9tT2VlLW8");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvbjAxdV9tT2VlLW8&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Water Treatment")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvcm4yNDZKcjZheUk");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvcm4yNDZKcjZheUk&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Corrosion")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvYk9kQTFFblB0Rnc");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvYk9kQTFFblB0Rnc&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("تفاعلات")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvYnpCOEtrZnlYcEk");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvYnpCOEtrZnlYcEk&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Refining Engineering")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvWFB4TXc2Vmx5TFk");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvWFB4TXc2Vmx5TFk&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Rheology")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvbk92UnB1YUhQdlE");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvbk92UnB1YUhQdlE&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Safety.")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvang4ei1BWmlYV1E");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvang4ei1BWmlYV1E&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Transportation and Storage")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvVkg2bmdPblYyZ0k");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvVkg2bmdPblYyZ0k&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Units Operations 2")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvVnkzRFg4ejR1ekU");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvVnkzRFg4ejR1ekU&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("English.")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvWE5TNXpfOVE4VU0");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvWE5TNXpfOVE4VU0&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Gas Engineering 1")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvam9nNjJXT1cxOEk");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvam9nNjJXT1cxOEk&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Heat Transfer")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvczBfWWgxQ2tkYm8");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvczBfWWgxQ2tkYm8&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Petrochemical Industry 1")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKveEdlMzZPV05HMjA");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKveEdlMzZPV05HMjA&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Pollution Control")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvS2J0SEFndjVGbWM");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvS2J0SEFndjVGbWM&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Design")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvMTl0RUhNTFF3elk");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvMTl0RUhNTFF3elk&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Natural Gas")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvZWdNcXhPWDJUQ1U");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvZWdNcXhPWDJUQ1U&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Petrochemical Industry 2")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvb0ZIUEdaQ3VRM3c");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvb0ZIUEdaQ3VRM3c&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Process Control")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvbl93VmhoeF9EaHM");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvbl93VmhoeF9EaHM&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("معالجة المواد البترولية")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvZF9FVTc2Q0NiajA");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvZF9FVTc2Q0NiajA&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Refining Engineering 2")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvUlNuZnEzdlhmQlk");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvUlNuZnEzdlhmQlk&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("اقتصاديات")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvMFNvX0twSFJKZ1E");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvMFNvX0twSFJKZ1E&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("تصميم أفران")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvWEpVc29BVkdJTXM");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvWEpVc29BVkdJTXM&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("تصميم أمثل")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvOEMtTTdJZEcwZlU");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvOEMtTTdJZEcwZlU&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("تطبيقات حاسب")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvQW1SZFY0MG5JUEE");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvQW1SZFY0MG5JUEE&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Geophysics")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvZUE5MFNDTzVtSUE");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvZUE5MFNDTzVtSUE&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Hydrology")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvZlBBS0xxZEVsTEk");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvZlBBS0xxZEVsTEk&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Petroleum Geology")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvbGs2YjBFcV90QUk");
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0B_yTOPHqjRKvbGs2YjBFcV90QUk&service=writely");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Petrophysics")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvbE84OFF4ZjNjbHM");
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0B_yTOPHqjRKvbE84OFF4ZjNjbHM&service=writely");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Rock Engineering")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvd1VYTDEtOXNFbzQ");
+                                i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0B_yTOPHqjRKvd1VYTDEtOXNFbzQ&service=writely");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Sedimentary Rocks")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvRjNRY0t3aEpvRU0");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvRjNRY0t3aEpvRU0&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Soil Mechanics")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvSVFHeW5lUUxVTHM");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvSVFHeW5lUUxVTHM&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Crude Oil Evaluation")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvaU1jeFVTcUJmQlU");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvaU1jeFVTcUJmQlU&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             } else if (material.getSelectedItem().toString().equals("Horizontal Drilling")) {
                                 Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvd21qcUp0VmhSR1E");
+                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvd21qcUp0VmhSR1E&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             }
 

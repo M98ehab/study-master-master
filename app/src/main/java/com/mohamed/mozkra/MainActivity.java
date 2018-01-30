@@ -48,7 +48,14 @@ public class MainActivity extends AppCompatActivity {
                     ArrayAdapter yearAdapter = ArrayAdapter.createFromResource(MainActivity.this,
                             R.array.yearcs, android.R.layout.simple_spinner_dropdown_item);
                     year.setAdapter(yearAdapter);
+
+                }else if (faculty.getSelectedItem().toString().equals("Petroleum and Mining Engineering Faculty")) {
+                    department.setVisibility(View.VISIBLE);
+                    ArrayAdapter pme_departmentAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                            R.array.pme_department, android.R.layout.simple_spinner_dropdown_item);
+                    department.setAdapter(pme_departmentAdapter);
                 }
+
             }
 
             @Override
@@ -87,7 +94,41 @@ public class MainActivity extends AppCompatActivity {
                                         R.array.materialfr, android.R.layout.simple_spinner_dropdown_item);
                                 material.setAdapter(yearAdapter);
                             }
+                            /*Petroleum and Mining Engineering Faculty*/
+                        }else if (faculty.getSelectedItem().toString().equals("Petroleum and Mining Engineering Faculty")) {
+                            if (department.getSelectedItem().toString().equals("Petroleum Engineering Dept.")) {
+                                year.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_petroleum_yearAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_petroleum_year, android.R.layout.simple_spinner_dropdown_item);
+                                year.setAdapter(pme_petroleum_yearAdapter);
+                            } else if (department.getSelectedItem().toString().equals("Refining Engineering Dept.")) {
+                                year.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_refining_yearAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_refining_year, android.R.layout.simple_spinner_dropdown_item);
+                                year.setAdapter(pme_refining_yearAdapter);
+                            } else if (department.getSelectedItem().toString().equals("Preparatory")) {
+                                year.setVisibility(View.GONE);
+                                semester.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_preparatory_semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_preparatory_semester, android.R.layout.simple_spinner_dropdown_item);
+                                semester.setAdapter(pme_preparatory_semesterAdapter);
+                            } else if (department.getSelectedItem().toString().equals("Petroleum Production and Exploration Program")) {
+                                year.setVisibility(View.GONE);
+                                semester.setVisibility(View.GONE);
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_program_materialAdapterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_program_material, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(pme_program_materialAdapterAdapter);
+                            } else if (department.getSelectedItem().toString().equals("Geology Dept.")) {
+                                year.setVisibility(View.GONE);
+                                semester.setVisibility(View.GONE);
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_geologyDept_materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_geologyDept_material, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(pme_geologyDept_materialAdapter);
+                            }
                         }
+
                     }
 
                     public void onNothingSelected(AdapterView<?> parent) {
@@ -148,7 +189,52 @@ public class MainActivity extends AppCompatActivity {
                                         R.array.semestercs2, android.R.layout.simple_spinner_dropdown_item);
                                 semester.setAdapter(semesterAdapter);
                             }
+                            /*Petroleum and Mining Engineering Faculty*/
+                        }else if (faculty.getSelectedItem().toString().equals("Petroleum and Mining Engineering Faculty")) {
+                            if (year.getSelectedItem().toString().equals("first year Petroleum")) {
+                                semester.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_petroleum1_semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_petroleum1_semester, android.R.layout.simple_spinner_dropdown_item);
+                                semester.setAdapter(pme_petroleum1_semesterAdapter);
+                            } else if (year.getSelectedItem().toString().equals("second year Petroleum")) {
+                                semester.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_petroleum2_semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_petroleum2_semester, android.R.layout.simple_spinner_dropdown_item);
+                                semester.setAdapter(pme_petroleum2_semesterAdapter);
+                            } else if (year.getSelectedItem().toString().equals("third year Petroleum")) {
+                                semester.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_petroleum3_semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_petroleum3_semester, android.R.layout.simple_spinner_dropdown_item);
+                                semester.setAdapter(pme_petroleum3_semesterAdapter);
+                            } else if (year.getSelectedItem().toString().equals("fourth year Petroleum")) {
+                                semester.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_petroleum4_semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_petroleum4_semester, android.R.layout.simple_spinner_dropdown_item);
+                                semester.setAdapter(pme_petroleum4_semesterAdapter);
+                            } else if (year.getSelectedItem().toString().equals("first year Refining")) {
+                                semester.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_refining1_semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_refining1_semester, android.R.layout.simple_spinner_dropdown_item);
+                                semester.setAdapter(pme_refining1_semesterAdapter);
+                            } else if (year.getSelectedItem().toString().equals("second year Refining")) {
+                                semester.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_refining2_semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_refining2_semester, android.R.layout.simple_spinner_dropdown_item);
+                                semester.setAdapter(pme_refining2_semesterAdapter);
+                            } else if (year.getSelectedItem().toString().equals("third year Refining")) {
+                                semester.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_refining3_semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_refining3_semester, android.R.layout.simple_spinner_dropdown_item);
+                                semester.setAdapter(pme_refining3_semesterAdapter);
+                            } else if (year.getSelectedItem().toString().equals("fourth year Refining")) {
+                                semester.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_refining4_semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_refining4_semester, android.R.layout.simple_spinner_dropdown_item);
+                                semester.setAdapter(pme_refining4_semesterAdapter);
+                            }
+
                         }
+
                     }
 
                     public void onNothingSelected(AdapterView<?> parent) {
@@ -209,6 +295,99 @@ public class MainActivity extends AppCompatActivity {
                                 ArrayAdapter materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
                                         R.array.materialcs21, android.R.layout.simple_spinner_dropdown_item);
                                 material.setAdapter(materialAdapter);
+                            }
+                            /*Petroleum and Mining Engineering Faculty*/
+                        }else if (faculty.getSelectedItem().toString().equals("Petroleum and Mining Engineering Faculty")) {
+                            if (semester.getSelectedItem().toString().equals("first semester preparatory")) {
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_preparatory_firstSemester_materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_preparatory_firstSemester_material, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(pme_preparatory_firstSemester_materialAdapter);
+                            } else if (semester.getSelectedItem().toString().equals("second semester preparatory")) {
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_preparatory_secondSemester_materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_preparatory_secondSemester_material, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(pme_preparatory_secondSemester_materialAdapter);
+                            } else if (semester.getSelectedItem().toString().equals("first semester petroleum1")) {
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_petroleum1_firstSemester_materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_petroleum1_firstSemester_material, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(pme_petroleum1_firstSemester_materialAdapter);
+                            } else if (semester.getSelectedItem().toString().equals("second semester petroleum1")) {
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_petroleum1_secondSemester_materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_petroleum1_secondSemester_material, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(pme_petroleum1_secondSemester_materialAdapter);
+                            } else if (semester.getSelectedItem().toString().equals("first semester petroleum2")) {
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_petroleum2_firstSemester_materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_petroleum2_firstSemester_material, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(pme_petroleum2_firstSemester_materialAdapter);
+                            } else if (semester.getSelectedItem().toString().equals("second semester petroleum2")) {
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_petroleum2_secondSemester_materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_petroleum2_secondSemester_material, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(pme_petroleum2_secondSemester_materialAdapter);
+                            } else if (semester.getSelectedItem().toString().equals("first semester petroleum3")) {
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_petroleum3_firstSemester_materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_petroleum3_firstSemester_material, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(pme_petroleum3_firstSemester_materialAdapter);
+                            } else if (semester.getSelectedItem().toString().equals("second semester petroleum3")) {
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_petroleum3_secondSemester_materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_petroleum3_secondSemester_material, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(pme_petroleum3_secondSemester_materialAdapter);
+                            } else if (semester.getSelectedItem().toString().equals("first semester petroleum4")) {
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_petroleum4_firstSemester_materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_petroleum4_firstSemester_material, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(pme_petroleum4_firstSemester_materialAdapter);
+                            } else if (semester.getSelectedItem().toString().equals("second semester petroleum4")) {
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_petroleum4_secondSemester_materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_petroleum4_secondSemester_material, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(pme_petroleum4_secondSemester_materialAdapter);
+                            } else if (semester.getSelectedItem().toString().equals("first semester refining1")) {
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_refining1_firstSemester_materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_refining1_firstSemester_material, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(pme_refining1_firstSemester_materialAdapter);
+                            } else if (semester.getSelectedItem().toString().equals("second semester refining1")) {
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_refining1_secondSemester_materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_refining1_secondSemester_material, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(pme_refining1_secondSemester_materialAdapter);
+                            } else if (semester.getSelectedItem().toString().equals("first semester refining2")) {
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_refining2_firstSemester_materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_refining2_firstSemester_material, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(pme_refining2_firstSemester_materialAdapter);
+                            } else if (semester.getSelectedItem().toString().equals("second semester refining2")) {
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_refining2_secondSemester_materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_refining2_secondSemester_material, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(pme_refining2_secondSemester_materialAdapter);
+                            } else if (semester.getSelectedItem().toString().equals("first semester refining3")) {
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_refining3_firstSemester_materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_refining3_firstSemester_material, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(pme_refining3_firstSemester_materialAdapter);
+                            } else if (semester.getSelectedItem().toString().equals("second semester refining3")) {
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_refining3_secondSemester_materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_refining3_secondSemester_material, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(pme_refining3_secondSemester_materialAdapter);
+                            } else if (semester.getSelectedItem().toString().equals("first semester refining4")) {
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_refining4_firstSemester_materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_refining4_firstSemester_material, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(pme_refining4_firstSemester_materialAdapter);
+                            } else if (semester.getSelectedItem().toString().equals("second semester refining4 ")) {
+                                material.setVisibility(View.VISIBLE);
+                                ArrayAdapter pme_refining4_secondSemester_materialAdapter = ArrayAdapter.createFromResource(MainActivity.this,
+                                        R.array.pme_refining4_secondSemester_material, android.R.layout.simple_spinner_dropdown_item);
+                                material.setAdapter(pme_refining4_secondSemester_materialAdapter);
                             }
                         }
                     }
@@ -434,9 +613,396 @@ public class MainActivity extends AppCompatActivity {
                                 Intent i = new Intent(MainActivity.this, study.class);
                                 i.putExtra("url", "https://accounts.google.com/ServiceLogin?hl=ar&passive=https://drive.google.com/drive/folders/1CnDW5EZXLhpGuQqvhmJHVGICRXl64q4Q");
                                 startActivity(i);
-
-
                         }
+                        /*Petroleum and Mining Engineering Faculty*/
+                        }else if (faculty.getSelectedItem().toString().equals("Petroleum and Mining Engineering Faculty")) {
+                            if (material.getSelectedItem().toString().equals("Calculus")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvYkJVQzB4cWJickk");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("هندسة تحليلية")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvUmdEcUdjcEprSDg");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("استاتيكا")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvdlFreXl1OFlrbnc");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("التاريخ الهندسي")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvRElmeWFOUUdyRzA");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("رسم هندسي")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvVGQ3OGc3YnhmeU0");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("فيزياء1")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvTkhJNDdCSkNDWDQ");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("كيمياء")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvSFJ1YXp6Y0t6eDQ");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("تكامل")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKveXdnNGFHWVN3ajQ");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("لغة")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvVE1iX1NXZzZhclE");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("انتاج")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvelpTWVAzN0xRekk");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("رسم و إسقاط")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvSnlSODhhSzRneHM");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("سليدات الديناميكا")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvQVlHbG9tZ2twdzQ");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("سليدات كهربية و مغناطيسية")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvSGNSZENtSVZMeTQ");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("English")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvMFR3b1NNOVNwNHM");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Maths 3")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvaVc5NXh2TG5abk0");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Matlab")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvbnZiRUQtYXFuSEE");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Plane and Topographic Surveying")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvazBuNERCSWNFRTQ");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Quantum Physics")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvU1ZQZHg2OHhzNnc");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Strength")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvNG1zX1haVXIwZWs");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Structure")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvSnJxQWNyOG1QR1k");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Geology")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvU29WTi1jYXpPcEE");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Introduction to Petroleum Engineering")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvaWdodWlnZ1pOdG8");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Maths")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvRjZaMDNrMFlIaVU");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Mechanical Drawing")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvQjZ5Zl82UHpvbEE");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Organic Chemstry")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvMWJsZUM2RE1Gd2s");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Physical Chemstry")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvTGM3N2N3eWF5REk");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Sustainability and Environmental Education")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvSndlTHJJWDFZT2c");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Drilling 1")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvRjZZaEZHUDhGTjA");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Fluid Mechanics")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvRWxlR2hveUlCYms");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Material Science")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvbGFGbjQ3WnU1c1U");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Statistics and Probability")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvUDg5ZUFBSTZxTGc");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Structural Geology")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvYXJrUkFjQzFHS1E");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Automatic Control")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvSC16MUttMlpaZ3c");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Computer Engineering")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvWUlkUGFDRzBlbFU");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Electrical Engineering")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvRDFoTHBRM0pnVUk");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Reservoir Fluids")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvZXJCMTRVWjZRNGs");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Thermodynamics")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvZGEzYl83eG1mMkU");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Computer Applications")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvZkI2c2g4WDQ3Q1U");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Geophisics")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKveUtjY24tcGJQNEU");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Hydraulics")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvMVkxT0hMMENsLTg");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Production Engineering 1")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvQ0J5bzdiWlJOS00");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Production Equipment")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvaFZQLUxKV2FSSHM");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Rock Properties")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvTzNmLUpmYlpGVGc");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Drilling 2")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvNzdqTDlWQUthLTg");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Drilling Equipment")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvU1MxVFBvaE9wNVk");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Exploration Engineering")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvelZJcGUySElsajA");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Language.")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvdGc3TGZtc1ZsUm8");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Safety")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvdjRLa2JjbHBaOVE");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Well Completion")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvVDhkdkZUWm9iUG8");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Sections")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvMml1ZnVWS1VRdzQ");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Petroleum Economics")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvWnV3amFmd3ZHN3M");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Petroleum Geology")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvLU56aERMWnAtekU");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Production Engineering 2")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvY3dkNnFMMG5KQnc");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Transportation and Storage of Crude Oil")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvUWlXSzRxaEJoQWc");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Well Simulation")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvNUEwYnFJRFRkRGM");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Applied Reservoir Engineering")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvWWJiOUR4SlBzUXc");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Enhanced Oil Recovery (EOR)")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvWjI0UWR2cmRnYjg");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Environmental Control in Oil and Gas Industry")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvSTNFQlNLZ0xBY3M");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Natural Gas Engineering")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvYjlYcWxYOVFNZDg");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Well Logging")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvTzRqYlYzTjUwelU");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("مدخل تكرير")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvSnRJU01kcXdnVlU");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Physical Chemsrty")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvellBUTA3ckx3bFk");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Petroleum Evaluation")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvNWNZRklUVXFKSzg");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Unit Operations 1")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvbjAxdV9tT2VlLW8");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Water Treatment")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvcm4yNDZKcjZheUk");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Corrosion")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvYk9kQTFFblB0Rnc");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("تفاعلات")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvYnpCOEtrZnlYcEk");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Refining Engineering")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvWFB4TXc2Vmx5TFk");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Rheology")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvbk92UnB1YUhQdlE");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Safety.")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvang4ei1BWmlYV1E");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Transportation and Storage")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvVkg2bmdPblYyZ0k");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Units Operations 2")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvVnkzRFg4ejR1ekU");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("English.")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvWE5TNXpfOVE4VU0");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Gas Engineering 1")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvam9nNjJXT1cxOEk");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Heat Transfer")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvczBfWWgxQ2tkYm8");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Petrochemical Industry 1")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKveEdlMzZPV05HMjA");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Pollution Control")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvS2J0SEFndjVGbWM");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Design")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvMTl0RUhNTFF3elk");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Natural Gas")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvZWdNcXhPWDJUQ1U");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Petrochemical Industry 2")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvb0ZIUEdaQ3VRM3c");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Process Control")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvbl93VmhoeF9EaHM");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("معالجة المواد البترولية")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvZF9FVTc2Q0NiajA");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Refining Engineering 2")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvUlNuZnEzdlhmQlk");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("اقتصاديات")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvMFNvX0twSFJKZ1E");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("تصميم أفران")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvWEpVc29BVkdJTXM");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("تصميم أمثل")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvOEMtTTdJZEcwZlU");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("تطبيقات حاسب")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvQW1SZFY0MG5JUEE");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Geophysics")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvZUE5MFNDTzVtSUE");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Hydrology")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvZlBBS0xxZEVsTEk");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Petroleum Geology")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvbGs2YjBFcV90QUk");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Petrophysics")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvbE84OFF4ZjNjbHM");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Rock Engineering")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvd1VYTDEtOXNFbzQ");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Sedimentary Rocks")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvRjNRY0t3aEpvRU0");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Soil Mechanics")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvSVFHeW5lUUxVTHM");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Crude Oil Evaluation")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvaU1jeFVTcUJmQlU");
+                                startActivity(i);
+                            } else if (material.getSelectedItem().toString().equals("Horizontal Drilling")) {
+                                Intent i = new Intent(MainActivity.this, study.class);
+                                i.putExtra("url", "https://drive.google.com/drive/u/0/folders/0B_yTOPHqjRKvd21qcUp0VmhSR1E");
+                                startActivity(i);
+                            }
+
+
                         }
                     }
 

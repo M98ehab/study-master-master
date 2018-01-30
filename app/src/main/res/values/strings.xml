@@ -164,4 +164,260 @@
         <item>امتحانات دكتور هيثم</item>
     </string-array>
 
+<!--Petroleum and Mining Engineering Faculty-->
+    <string-array name="pme_department">
+        <item>Choose the Department...</item>
+        <item>Preparatory</item>
+        <item>Petroleum Engineering Dept.</item>
+        <item>Refining Engineering Dept.</item>
+        <item>Geology Dept.</item>
+        <item>Petroleum Production and Exploration Program</item>
+    </string-array>
+
+    <string-array name="pme_petroleum_year">
+        <item>Choose the year...</item>
+        <item>first year Petroleum</item>
+        <item>second year Petroleum</item>
+        <item>third year Petroleum</item>
+        <item>fourth year Petroleum</item>
+    </string-array>
+
+    <string-array name="pme_refining_year">
+        <item>Choose the year...</item>
+        <item>first year Refining</item>
+        <item>second year Refining</item>
+        <item>third year Refining</item>
+        <item>fourth year Refining</item>
+    </string-array>
+
+    <string-array name="pme_preparatory_semester">
+        <item>Choose the semester...</item>
+        <item>first semester preparatory</item>
+        <item>second semester preparatory</item>
+    </string-array>
+
+    <string-array name="pme_petroleum1_semester">
+        <item>Choose the semester...</item>
+        <item>first semester petroleum1</item>
+        <item>second semester petroleum1</item>
+    </string-array>
+
+    <string-array name="pme_petroleum2_semester">
+        <item>Choose the semester...</item>
+        <item>first semester petroleum2</item>
+        <item>second semester petroleum2</item>
+    </string-array>
+
+    <string-array name="pme_petroleum3_semester">
+        <item>Choose the semester...</item>
+        <item>first semester petroleum3</item>
+        <item>second semester petroleum3</item>
+    </string-array>
+
+    <string-array name="pme_petroleum4_semester">
+        <item>Choose the semester...</item>
+        <item>first semester petroleum4</item>
+        <item>second semester petroleum4</item>
+    </string-array>
+
+    <string-array name="pme_refining1_semester">
+        <item>Choose the semester...</item>
+        <item>first semester refining1</item>
+        <item>second semester refining1</item>
+    </string-array>
+
+    <string-array name="pme_refining2_semester">
+        <item>Choose the semester...</item>
+        <item>first semester refining2</item>
+        <item>second semester refining2</item>
+    </string-array>
+
+    <string-array name="pme_refining3_semester">
+        <item>Choose the semester...</item>
+        <item>first semester refining3</item>
+        <item>second semester refining3</item>
+    </string-array>
+
+    <string-array name="pme_refining4_semester">
+        <item>Choose the semester...</item>
+        <item>first semester refining4</item>
+        <item>second semester refining4</item>
+    </string-array>
+
+    <string-array name="pme_preparatory_firstSemester_material">
+        <item>Choose the material...</item>
+        <item>Calculus</item>
+        <item>هندسة تحليلية</item>
+        <item>استاتيكا</item>
+        <item>التاريخ الهندسي</item>
+        <item>رسم هندسي</item>
+        <item>فيزياء1</item>
+        <item>كيمياء</item>
+    </string-array>
+
+    <string-array name="pme_preparatory_secondSemester_material">
+        <item>Choose the material...</item>
+        <item>تكامل</item>
+        <item>لغة</item>
+        <item>انتاج</item>
+        <item>رسم و إسقاط</item>
+        <item>سليدات الديناميكا</item>
+        <item>سليدات كهربية و مغناطيسية</item>
+    </string-array>
+
+    <string-array name="pme_petroleum1_firstSemester_material">
+        <item>Choose the material...</item>
+        <item>English</item>
+        <item>Maths 3</item>
+        <item>Matlab</item>
+        <item>Plane and Topographic Surveying</item>
+        <item>Quantum Physics</item>
+        <item>Strength</item>
+        <item>Structure</item>
+    </string-array>
+
+    <string-array name="pme_petroleum1_secondSemester_material">
+        <item>Choose the material...</item>
+        <item>Geology</item>
+        <item>Introduction to Petroleum Engineering</item>
+        <item>Maths</item>
+        <item>Mechanical Drawing</item>
+        <item>Organic Chemstry</item>
+        <item>Physical Chemstry</item>
+        <item>Sustainability and Environmental Education</item>
+    </string-array>
+
+    <string-array name="pme_petroleum2_firstSemester_material">
+        <item>Choose the material...</item>
+        <item>Drilling 1</item>
+        <item>Fluid Mechanics</item>
+        <item>Material Science</item>
+        <item>Statistics and Probability</item>
+        <item>Structural Geology</item>
+    </string-array>
+
+    <string-array name="pme_petroleum2_secondSemester_material">
+        <item>Choose the material...</item>
+        <item>Automatic Control</item>
+        <item>Computer Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Reservoir Fluids</item>
+        <item>Thermodynamics</item>
+    </string-array>
+
+    <string-array name="pme_petroleum3_firstSemester_material">
+        <item>Choose the material...</item>
+        <item>Computer Applications</item>
+        <item>Geophisics</item>
+        <item>Hydraulics</item>
+        <item>Production Engineering 1</item>
+        <item>Production Equipment</item>
+        <item>Rock Properties</item>
+    </string-array>
+
+    <string-array name="pme_petroleum3_secondSemester_material">
+        <item>Choose the material...</item>
+        <item>Drilling 2</item>
+        <item>Drilling Equipment</item>
+        <item>Exploration Engineering</item>
+        <item>Language.</item>
+        <item>Safety</item>
+        <item>Well Completion</item>
+        <item>Sections</item>
+    </string-array>
+
+    <string-array name="pme_petroleum4_firstSemester_material">
+        <item>Choose the material...</item>
+        <item>Petroleum Economics</item>
+        <item>Petroleum Geology</item>
+        <item>Production Engineering 2</item>
+        <item>Transportation and Storage of Crude Oil</item>
+        <item>Well Simulation</item>
+    </string-array>
+
+    <string-array name="pme_petroleum4_secondSemester_material">
+        <item>Choose the material...</item>
+        <item>Applied Reservoir Engineering</item>
+        <item>Enhanced Oil Recovery (EOR)</item>
+        <item>Environmental Control in Oil and Gas Industry</item>
+        <item>Natural Gas Engineering</item>
+        <item>Well Logging</item>
+    </string-array>
+
+    <string-array name="pme_refining1_firstSemester_material">
+        <item>Choose the material...</item>
+        <item>مدخل تكرير</item>
+    </string-array>
+
+    <string-array name="pme_refining1_secondSemester_material">
+        <item>Choose the material...</item>
+        <item>Physical Chemsrty</item>
+    </string-array>
+
+    <string-array name="pme_refining2_firstSemester_material">
+        <item>Choose the material...</item>
+        <item>Petroleum Evaluation</item>
+        <item>Unit Operations 1</item>
+        <item>Water Treatment</item>
+    </string-array>
+
+    <string-array name="pme_refining2_secondSemester_material">
+        <item>Choose the material...</item>
+        <item>Corrosion</item>
+        <item>تفاعلات</item>
+    </string-array>
+
+    <string-array name="pme_refining3_firstSemester_material">
+        <item>Choose the material...</item>
+        <item>Refining Engineering</item>
+        <item>Rheology</item>
+        <item>Safety.</item>
+        <item>Transportation and Storage</item>
+        <item>Units Operations 2</item>
+    </string-array>
+
+    <string-array name="pme_refining3_secondSemester_material">
+        <item>Choose the material...</item>
+        <item>English.</item>
+        <item>Gas Engineering 1</item>
+        <item>Heat Transfer</item>
+        <item>Petrochemical Industry 1</item>
+        <item>Pollution Control</item>
+    </string-array>
+
+    <string-array name="pme_refining4_firstSemester_material">
+        <item>Choose the material...</item>
+        <item>Design</item>
+        <item>Natural Gas</item>
+        <item>Petrochemical Industry 2</item>
+        <item>Process Control</item>
+        <item>معالجة المواد البترولية</item>
+    </string-array>
+
+    <string-array name="pme_refining4_secondSemester_material">
+        <item>Choose the material...</item>
+        <item>Refining Engineering 2</item>
+        <item>اقتصاديات</item>
+        <item>تصميم أفران</item>
+        <item>تصميم أمثل</item>
+        <item>تطبيقات حاسب</item>
+    </string-array>
+
+    <string-array name="pme_geologyDept_material">
+        <item>Choose the material...</item>
+        <item>Geophysics</item>
+        <item>Hydrology</item>
+        <item>Petroleum Geology</item>
+        <item>Petrophysics</item>
+        <item>Rock Engineering</item>
+        <item>Sedimentary Rocks</item>
+        <item>Soil Mechanics</item>
+    </string-array>
+
+    <string-array name="pme_program_material">
+        <item>Choose the material...</item>
+        <item>Crude Oil Evaluation</item>
+        <item>Horizontal Drilling</item>
+    </string-array>
+
 </resources>

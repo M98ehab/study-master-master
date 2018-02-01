@@ -4,7 +4,7 @@
     <string name="todo">TODO</string>
 
     <string-array name="faculty">
-        <item>Choose your Faculty .... </item>
+        <item>Choose your Faculty....</item>
         <item>Petroleum and Mining Engineering Faculty</item>
         <item>Science Faculty</item>
         <item>Education Faculty</item>

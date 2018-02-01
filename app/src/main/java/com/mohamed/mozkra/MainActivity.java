@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,30 +33,43 @@ public class MainActivity extends AppCompatActivity {
                 /*Politics and Economy*/
                 if (faculty.getSelectedItem().toString().equals("Politics and Economy")) {
                     department.setVisibility(View.GONE);
+                    semester.setVisibility(View.GONE);
+                    material.setVisibility(View.GONE);
                     year.setVisibility(View.VISIBLE);
                     ArrayAdapter yearAdapter = ArrayAdapter.createFromResource(MainActivity.this,
                             R.array.year, android.R.layout.simple_spinner_dropdown_item);
                     year.setAdapter(yearAdapter);
+
+                    /*Fish resources and marine studies*/
                 } else if (faculty.getSelectedItem().toString().equals("Fish resources and marine studies")) {
                     department.setVisibility(View.VISIBLE);
+                    year.setVisibility(View.GONE);
+                    semester.setVisibility(View.GONE);
+                    material.setVisibility(View.GONE);
                     ArrayAdapter departmentAdapter = ArrayAdapter.createFromResource(MainActivity.this,
                             R.array.departmentfr, android.R.layout.simple_spinner_dropdown_item);
                     department.setAdapter(departmentAdapter);
 
+                    /*Computers and information*/
                 } else if (faculty.getSelectedItem().toString().equals("Computers and information")) {
                     department.setVisibility(View.GONE);
+                    semester.setVisibility(View.GONE);
+                    material.setVisibility(View.GONE);
                     year.setVisibility(View.VISIBLE);
                     ArrayAdapter yearAdapter = ArrayAdapter.createFromResource(MainActivity.this,
                             R.array.yearcs, android.R.layout.simple_spinner_dropdown_item);
                     year.setAdapter(yearAdapter);
 
+                    /*Petroleum and Mining Engineering Faculty*/
                 }else if (faculty.getSelectedItem().toString().equals("Petroleum and Mining Engineering Faculty")) {
                     department.setVisibility(View.VISIBLE);
+                    year.setVisibility(View.GONE);
+                    semester.setVisibility(View.GONE);
+                    material.setVisibility(View.GONE);
                     ArrayAdapter pme_departmentAdapter = ArrayAdapter.createFromResource(MainActivity.this,
                             R.array.pme_department, android.R.layout.simple_spinner_dropdown_item);
                     department.setAdapter(pme_departmentAdapter);
                 }
-
             }
 
             @Override
@@ -73,16 +87,21 @@ public class MainActivity extends AppCompatActivity {
                             if (department.getSelectedItem().toString().equals("Ocean")) {
                                 year.setVisibility(View.VISIBLE);
                                 semester.setVisibility(View.GONE);
+                                material.setVisibility(View.GONE);
                                 ArrayAdapter yearAdapter = ArrayAdapter.createFromResource(MainActivity.this,
                                         R.array.yearRF1, android.R.layout.simple_spinner_dropdown_item);
                                 year.setAdapter(yearAdapter);
                             } else if (department.getSelectedItem().toString().equals("هندسة بحرية")) {
                                 year.setVisibility(View.VISIBLE);
+                                semester.setVisibility(View.GONE);
+                                material.setVisibility(View.GONE);
                                 ArrayAdapter yearAdapter = ArrayAdapter.createFromResource(MainActivity.this,
                                         R.array.yearRF2, android.R.layout.simple_spinner_dropdown_item);
                                 year.setAdapter(yearAdapter);
                             } else if (department.getSelectedItem().toString().equals("مميز")) {
                                 year.setVisibility(View.VISIBLE);
+                                semester.setVisibility(View.GONE);
+                                material.setVisibility(View.GONE);
                                 ArrayAdapter yearAdapter = ArrayAdapter.createFromResource(MainActivity.this,
                                         R.array.yearRF, android.R.layout.simple_spinner_dropdown_item);
                                 year.setAdapter(yearAdapter);
@@ -98,17 +117,22 @@ public class MainActivity extends AppCompatActivity {
                         }else if (faculty.getSelectedItem().toString().equals("Petroleum and Mining Engineering Faculty")) {
                             if (department.getSelectedItem().toString().equals("Petroleum Engineering Dept.")) {
                                 year.setVisibility(View.VISIBLE);
+                                semester.setVisibility(View.GONE);
+                                material.setVisibility(View.GONE);
                                 ArrayAdapter pme_petroleum_yearAdapter = ArrayAdapter.createFromResource(MainActivity.this,
                                         R.array.pme_petroleum_year, android.R.layout.simple_spinner_dropdown_item);
                                 year.setAdapter(pme_petroleum_yearAdapter);
                             } else if (department.getSelectedItem().toString().equals("Refining Engineering Dept.")) {
                                 year.setVisibility(View.VISIBLE);
+                                semester.setVisibility(View.GONE);
+                                material.setVisibility(View.GONE);
                                 ArrayAdapter pme_refining_yearAdapter = ArrayAdapter.createFromResource(MainActivity.this,
                                         R.array.pme_refining_year, android.R.layout.simple_spinner_dropdown_item);
                                 year.setAdapter(pme_refining_yearAdapter);
                             } else if (department.getSelectedItem().toString().equals("Preparatory")) {
                                 year.setVisibility(View.GONE);
                                 semester.setVisibility(View.VISIBLE);
+                                material.setVisibility(View.GONE);
                                 ArrayAdapter pme_preparatory_semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
                                         R.array.pme_preparatory_semester, android.R.layout.simple_spinner_dropdown_item);
                                 semester.setAdapter(pme_preparatory_semesterAdapter);
@@ -143,11 +167,13 @@ public class MainActivity extends AppCompatActivity {
                         if(faculty.getSelectedItem().toString().equals("Politics and Economy")) {
                             if (year.getSelectedItem().toString().equals("first year P.E")) {
                                 semester.setVisibility(View.VISIBLE);
+                                material.setVisibility(View.GONE);
                                 ArrayAdapter semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
                                         R.array.semesterpe1, android.R.layout.simple_spinner_dropdown_item);
                                 semester.setAdapter(semesterAdapter);
                             } else if (year.getSelectedItem().toString().equals("second year P.E")) {
                                 semester.setVisibility(View.VISIBLE);
+                                material.setVisibility(View.GONE);
                                 ArrayAdapter semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
                                         R.array.semesterpe2, android.R.layout.simple_spinner_dropdown_item);
                                 semester.setAdapter(semesterAdapter);
@@ -164,6 +190,7 @@ public class MainActivity extends AppCompatActivity {
                             }
                             else if (year.getSelectedItem().toString().equals("Second year F.R")){
                                 semester.setVisibility(View.VISIBLE);
+                                material.setVisibility(View.GONE);
                                 ArrayAdapter semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
                                         R.array.semesterfr1, android.R.layout.simple_spinner_dropdown_item);
                                 semester.setAdapter(semesterAdapter);
@@ -171,6 +198,7 @@ public class MainActivity extends AppCompatActivity {
                             }
                             else if (year.getSelectedItem().toString().equals("first year F.R")){
                                 semester.setVisibility(View.VISIBLE);
+                                material.setVisibility(View.GONE);
                                 ArrayAdapter semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
                                         R.array.semesterfr11, android.R.layout.simple_spinner_dropdown_item);
                                 semester.setAdapter(semesterAdapter);
@@ -180,11 +208,13 @@ public class MainActivity extends AppCompatActivity {
                         }else if (faculty.getSelectedItem().toString().equals("Computers and information")) {
                             if (year.getSelectedItem().toString().equals("first year C.S")) {
                                 semester.setVisibility(View.VISIBLE);
+                                material.setVisibility(View.GONE);
                                 ArrayAdapter semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
                                         R.array.semestercs1, android.R.layout.simple_spinner_dropdown_item);
                                 semester.setAdapter(semesterAdapter);
                             } else if (year.getSelectedItem().toString().equals("second year C.S")) {
                                 semester.setVisibility(View.VISIBLE);
+                                material.setVisibility(View.GONE);
                                 ArrayAdapter semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
                                         R.array.semestercs2, android.R.layout.simple_spinner_dropdown_item);
                                 semester.setAdapter(semesterAdapter);
@@ -193,41 +223,49 @@ public class MainActivity extends AppCompatActivity {
                         }else if (faculty.getSelectedItem().toString().equals("Petroleum and Mining Engineering Faculty")) {
                             if (year.getSelectedItem().toString().equals("first year Petroleum")) {
                                 semester.setVisibility(View.VISIBLE);
+                                material.setVisibility(View.GONE);
                                 ArrayAdapter pme_petroleum1_semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
                                         R.array.pme_petroleum1_semester, android.R.layout.simple_spinner_dropdown_item);
                                 semester.setAdapter(pme_petroleum1_semesterAdapter);
                             } else if (year.getSelectedItem().toString().equals("second year Petroleum")) {
                                 semester.setVisibility(View.VISIBLE);
+                                material.setVisibility(View.GONE);
                                 ArrayAdapter pme_petroleum2_semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
                                         R.array.pme_petroleum2_semester, android.R.layout.simple_spinner_dropdown_item);
                                 semester.setAdapter(pme_petroleum2_semesterAdapter);
                             } else if (year.getSelectedItem().toString().equals("third year Petroleum")) {
                                 semester.setVisibility(View.VISIBLE);
+                                material.setVisibility(View.GONE);
                                 ArrayAdapter pme_petroleum3_semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
                                         R.array.pme_petroleum3_semester, android.R.layout.simple_spinner_dropdown_item);
                                 semester.setAdapter(pme_petroleum3_semesterAdapter);
                             } else if (year.getSelectedItem().toString().equals("fourth year Petroleum")) {
                                 semester.setVisibility(View.VISIBLE);
+                                material.setVisibility(View.GONE);
                                 ArrayAdapter pme_petroleum4_semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
                                         R.array.pme_petroleum4_semester, android.R.layout.simple_spinner_dropdown_item);
                                 semester.setAdapter(pme_petroleum4_semesterAdapter);
                             } else if (year.getSelectedItem().toString().equals("first year Refining")) {
                                 semester.setVisibility(View.VISIBLE);
+                                material.setVisibility(View.GONE);
                                 ArrayAdapter pme_refining1_semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
                                         R.array.pme_refining1_semester, android.R.layout.simple_spinner_dropdown_item);
                                 semester.setAdapter(pme_refining1_semesterAdapter);
                             } else if (year.getSelectedItem().toString().equals("second year Refining")) {
                                 semester.setVisibility(View.VISIBLE);
+                                material.setVisibility(View.GONE);
                                 ArrayAdapter pme_refining2_semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
                                         R.array.pme_refining2_semester, android.R.layout.simple_spinner_dropdown_item);
                                 semester.setAdapter(pme_refining2_semesterAdapter);
                             } else if (year.getSelectedItem().toString().equals("third year Refining")) {
                                 semester.setVisibility(View.VISIBLE);
+                                material.setVisibility(View.GONE);
                                 ArrayAdapter pme_refining3_semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
                                         R.array.pme_refining3_semester, android.R.layout.simple_spinner_dropdown_item);
                                 semester.setAdapter(pme_refining3_semesterAdapter);
                             } else if (year.getSelectedItem().toString().equals("fourth year Refining")) {
                                 semester.setVisibility(View.VISIBLE);
+                                material.setVisibility(View.GONE);
                                 ArrayAdapter pme_refining4_semesterAdapter = ArrayAdapter.createFromResource(MainActivity.this,
                                         R.array.pme_refining4_semester, android.R.layout.simple_spinner_dropdown_item);
                                 semester.setAdapter(pme_refining4_semesterAdapter);

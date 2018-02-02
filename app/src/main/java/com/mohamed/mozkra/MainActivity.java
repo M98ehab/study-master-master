@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -30,8 +31,15 @@ public class MainActivity extends AppCompatActivity {
         faculty.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if (faculty.getSelectedItem().toString().equals("Choose your Faculty....")) {
+                    Toast.makeText(MainActivity.this,"Choose your faculty..",Toast.LENGTH_SHORT).show();
+                department.setVisibility(View.GONE);
+                year.setVisibility(View.GONE);
+                semester.setVisibility(View.GONE);
+                material.setVisibility(View.GONE);
+
                 /*Politics and Economy*/
-                if (faculty.getSelectedItem().toString().equals("Politics and Economy")) {
+                }else if (faculty.getSelectedItem().toString().equals("Politics and Economy")) {
                     department.setVisibility(View.GONE);
                     semester.setVisibility(View.GONE);
                     material.setVisibility(View.GONE);

@@ -14,6 +14,7 @@
         <item>Politics and Economy</item>
     </string-array>
 
+
 <!--Politics and Economy-->
     <string-array name="year">
         <item>Choose the year...</item>
@@ -56,6 +57,7 @@
         <item>اختر المادة...</item>
         <item>امتحان اقتصاد</item>
     </string-array>
+
 
 <!--Fish resources and marine studies-->
     <string-array name="departmentfr">
@@ -119,6 +121,7 @@
         <item>بحيرات</item>
     </string-array>
 
+
 <!--Computers and information-->
     <string-array name="yearcs">
         <item>Choose the year...</item>
@@ -168,6 +171,7 @@
         <item>definition of Java</item>
         <item>امتحانات تانية حاسبات</item>
     </string-array>
+
 
 <!--Petroleum and Mining Engineering Faculty-->
     <string-array name="pme_department">
@@ -424,5 +428,177 @@
         <item>Crude Oil Evaluation</item>
         <item>Horizontal Drilling</item>
     </string-array>
+
+
+    <!--Arts and Humanities science Faculty-->
+    <string-array name="department">
+        <item>choose your department...</item>
+        <item>English Dapartment</item>
+        <item>French Department</item>
+        <item>Geography</item>
+        <item>Physiology Department</item>
+        <item>Sociology Department</item>
+    </string-array>
+
+    <string-array name="E_dep_year">
+        <item>Choose the year...</item>
+        <item>first year</item>
+        <item>second year</item>
+        <item>third year</item>
+        <item>امتحانات قسم انجليزى</item>
+    </string-array>
+
+    <string-array name="F_dep_year">
+        <item>Choose the year...</item>
+        <item>first year</item>
+        <item>second year</item>
+        <item>third year</item>
+    </string-array>
+
+    <string-array name="G_dep_year">
+        <item>Choose the year...</item>
+        <item>first year</item>
+    </string-array>
+
+    <string-array name="PH_and_S_dep_year">
+        <item>Choose the year...</item>
+        <item>first year</item>
+        <item>second year</item>
+    </string-array>
+
+    <string-array name="semester2">
+        <item>Choose the semester...</item>
+        <item>first semester</item>
+        <item>second semester</item>
+    </string-array>
+
+    <string-array name="semester">
+        <item>Choose the semester...</item>
+        <item>first semester</item>
+    </string-array>
+
+    <string-array name="semester3">
+        <item>Choose the semester...</item>
+        <item>امتحانات ترم اول</item>
+    </string-array>
+
+    <string-array name="E_Y1_S1_material">
+        <item>choose the material...</item>
+        <item>ادب انجليزى</item>
+        <item>امتحانات</item>
+        <item>جغرافيا غرب اوربا</item>
+        <item>phonotics-صوتيات1</item>
+        <item>لغه فرنسيه</item>
+    </string-array>
+
+    <string-array name="E_Y1_S2_material">
+        <item>choose the material...</item>
+        <item>تاريخ غرب اوربا</item>
+        <item>حضاره-civilization</item>
+        <item>لغه عربيه</item>
+        <item>من الادب الانجليزى</item>
+    </string-array>
+
+    <string-array name="E_Y2_S1_material">
+        <item>choose the material...</item>
+        <item>drama(shakespearean drama)</item>
+        <item>poetry</item>
+        <item>امتحانات</item>
+        <item>phonotics-صوتيات2</item>
+    </string-array>
+
+    <string-array name="E_Y2_S2_material">
+        <item>choose the material...</item>
+        <item>essay writing</item>
+        <item>novel</item>
+        <item>حضاره-civilization</item>
+    </string-array>
+
+    <string-array name="E_Y3_S1_material">
+        <item>choose the material...</item>
+        <item>د/شاكر رزق</item>
+    </string-array>
+
+    <string-array name="F_Y1_S1_material">
+        <item>choose the material...</item>
+        <item>grammer</item>
+        <item>امتحانات</item>
+        <item>تعبير كتابى</item>
+        <item>صوتيات</item>
+    </string-array>
+
+    <string-array name="F_Y1_S2_material">
+        <item>choose the material...</item>
+        <item>امتحانات</item>
+        <item>حضاره د/دعاء</item>
+        <item>حضاره د/منى</item>
+        <item>عربى</item>
+        <item>قراءه د/ابراهيم</item>
+        <item>محادثه د/ عبده</item>
+        <item>نصوص د/ منى</item>
+    </string-array>
+
+    <string-array name="F_Y2_S1_material">
+        <item>choose the material...</item>
+        <item>grammer</item>
+        <item>امتحانات1</item>
+        <item>امتحانات2</item>
+        <item>امتحانات3</item>
+    </string-array>
+
+    <string-array name="F_Y2_S2_material">
+        <item>choose the material...</item>
+        <item>امتحانات</item>
+    </string-array>
+
+    <string-array name="F_Y3_S1_material">
+        <item>choose the material...</item>
+        <item>قواعد3 فرنسى</item>
+    </string-array>
+
+    <string-array name="G_Y1_S1_material">
+        <item>choose the material...</item>
+        <item>امتحانات ترم اول</item>
+    </string-array>
+
+    <string-array name="PH_Y1_S1_material">
+        <item>choose the material...</item>
+        <item>اخلاق - د/محروس</item>
+    </string-array>
+
+    <string-array name="PH_Y2_S1_material">
+        <item>choose the material...</item>
+        <item>تفكير علمى-د/منتصر</item>
+        <item>رياضه</item>
+        <item>سياسه د/منتصر</item>
+        <item>علم الكلام د/منتصر</item>
+    </string-array>
+
+    <string-array name="S_Y1_S1_material">
+        <item>choose the material...</item>
+        <item>الاسس النظريه</item>
+        <item>امتحانات</item>
+        <item>تاريخ الفكر الاجتماعى</item>
+        <item>جغرافيا عامه</item>
+        <item>فلسفه عامه</item>
+        <item>لغه عربيه</item>
+        <item>مدخل فى علم الاجتماع</item>
+    </string-array>
+
+    <string-array name="S_Y1_S2_material">
+        <item>choose the material...</item>
+        <item>الاحصاء</item>
+        <item>انثروبولوجيا</item>
+        <item>بناء المجتمع ونظمه</item>
+        <item>علم السكان</item>
+        <item>علم النفس</item>
+        <item>لغه انجليزيه</item>
+    </string-array>
+
+    <string-array name="S_Y2_S1_material">
+        <item>choose the material...</item>
+        <item>امتحانات ترم اول</item>
+    </string-array>
+
 
 </resources>

@@ -1288,12 +1288,358 @@ public class MainActivity extends AppCompatActivity {
                                 i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0B_yTOPHqjRKvd21qcUp0VmhSR1E&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
                                 startActivity(i);
                             }
+
                             /*Arts and Humanities science Faculty*/
                         }else if(faculty.getSelectedItem().toString().equals("Arts and Humanities science Faculty")) {
                             if (dep == "E" & ye == 1 & sem == 1 & material.getSelectedItem().toString().equals("ادب انجليزى")) {
-                                Intent i = new Intent(MainActivity.this, study.class);
-                                i.putExtra("url", "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0ByJz1l2rodbFTDBDY1ByZU9Ndzg&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
-                                startActivity(i);
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0ByJz1l2rodbFTDBDY1ByZU9Ndzg&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "E" & ye == 1 & sem == 1 & material.getSelectedItem().toString().equals("امتحانات")) {
+
+                                ur = "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/1hn3W0fyGe9k_06jNNQ-Mm1ZIQfS293Kh&service=writely";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "E" & ye == 1 & sem == 1 & material.getSelectedItem().toString().equals("جغرافيا غرب اوربا")) {
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0ByJz1l2rodbFZlZSakdERS1sVXc&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "E" & ye == 1 & sem == 1 & material.getSelectedItem().toString().equals("phonotics-صوتيات1")) {
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0ByJz1l2rodbFdzgtQ0RIT01YUU0&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "E" & ye == 1 & sem == 1 & material.getSelectedItem().toString().equals("لغه فرنسيه")) {
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0ByJz1l2rodbFVk55d0hGUTJFckk&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+
+                            } else if (dep == "E" & ye == 1 & sem == 2 & material.getSelectedItem().toString().equals("تاريخ غرب اوربا")) {
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0ByJz1l2rodbFUkFZQktWc0lMZEE&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "E" & ye == 1 & sem == 2 & material.getSelectedItem().toString().equals("حضاره-civilization")) {
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0ByJz1l2rodbFVzJCbmRPUG9vLXM&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "E" & ye == 1 & sem == 2 & material.getSelectedItem().toString().equals("لغه عربيه")) {
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0ByJz1l2rodbFaTRlVmtkakFkRXc&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "E" & ye == 1 & sem == 2 & material.getSelectedItem().toString().equals("من الادب الانجليزى")) {
+                                ur = "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0ByJz1l2rodbFdURmdmpiUjlsQUk&service=writely";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "E" & ye == 2 & sem == 1 & material.getSelectedItem().toString().equals("drama(shakespearean drama)")) {
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0ByJz1l2rodbFOFRTVnl6TlZxUDA&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "E" & ye == 2 & sem == 1 & material.getSelectedItem().toString().equals("poetry")) {
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "E" & ye == 2 & sem == 1 & material.getSelectedItem().toString().equals("امتحانات")) {
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1nYLrDf7K6Oq0PenvY9E1HbwSa_c8wx6I&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "E" & ye == 2 & sem == 1 & material.getSelectedItem().toString().equals("phonotics-صوتيات2")) {
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0ByJz1l2rodbFR1JwX2pyMFM3Ykk&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "E" & ye == 2 & sem == 2 & material.getSelectedItem().toString().equals("essay writing")) {
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0ByJz1l2rodbFR1JwX2pyMFM3Ykk&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "E" & ye == 2 & sem == 2 & material.getSelectedItem().toString().equals("novel")) {
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0ByJz1l2rodbFMk9GR3dEeDNNNDQ&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "E" & ye == 2 & sem == 2 & material.getSelectedItem().toString().equals("حضاره-civilization")) {
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0ByJz1l2rodbFbGVDQkhwbTA5M28&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "E" & ye == 3 & sem == 1 & material.getSelectedItem().toString().equals("د/شاكر رزق")) {
+                                ur = "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/1dvFWHkRZ8jNmAzwfWpc1aAl-tJ0C7-fs&service=writely";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "F" & ye == 1 & sem == 1 & material.getSelectedItem().toString().equals("grammer")) {
+
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0ByJz1l2rodbFVU90V2VwWWdXemc&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "F" & ye == 1 & sem == 1 & material.getSelectedItem().toString().equals("امتحانات")) {
+
+                                ur = "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0Bx1TXZ-UjRguSHNYNDd5YWt3a0k&service=writely";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "F" & ye == 1 & sem == 1 & material.getSelectedItem().toString().equals("تعبير كتابى")) {
+
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0BzYYW8dU6VmaTWZva1JTY0RuOWc&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "F" & ye == 1 & sem == 1 & material.getSelectedItem().toString().equals("صوتيات")) {
+
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1HiJsGLlWEZcJdZsbTW0pIojGDn2AtLp6&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "F" & ye == 1 & sem == 2 & material.getSelectedItem().toString().equals("امتحانات")) {
+
+                                ur = "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0Bx1TXZ-UjRguS1FnbDFRZ1REUGs&service=writely";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "F" & ye == 1 & sem == 2 & material.getSelectedItem().toString().equals("حضاره د/دعاء")) {
+
+                                ur = "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0BzYYW8dU6VmaTGdUVzFnRWFPS1U&service=writely";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "F" & ye == 1 & sem == 2 & material.getSelectedItem().toString().equals("حضاره د/منى")) {
+
+                                ur = "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0BzYYW8dU6VmaT2phbUFIREZYYkU&service=writely";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "F" & ye == 1 & sem == 2 & material.getSelectedItem().toString().equals("عربى")) {
+
+                                ur = "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0BzYYW8dU6VmaTXlNVVFoeVFIbUU&service=writely";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "F" & ye == 1 & sem == 2 & material.getSelectedItem().toString().equals("قراءه د/ابراهيم")) {
+
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0BzYYW8dU6VmaOHJuOGxVWndTZ0k&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "F" & ye == 1 & sem == 2 & material.getSelectedItem().toString().equals("محادثه د/ عبده")) {
+
+                                ur = "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0BzYYW8dU6VmaNG1NdTNqdEdoNHc&service=writely";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "F" & ye == 1 & sem == 2 & material.getSelectedItem().toString().equals("نصوص د/ منى")) {
+
+                                ur = "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0Bx1TXZ-UjRguNE0yRl81R1dwUTQ&service=writely";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "F" & ye == 2 & sem == 1 & material.getSelectedItem().toString().equals("grammer")) {
+
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0BzYYW8dU6VmaaW5scTFuT2JUUE0&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "F" & ye == 2 & sem == 1 & material.getSelectedItem().toString().equals("امتحانات1")) {
+
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0Bx1TXZ-UjRguQ0lla01YWlZkS2c&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "F" & ye == 2 & sem == 1 & material.getSelectedItem().toString().equals("امتحانات2")) {
+
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1-c-aKiFwclBdA2Xjoonql5Nb1zqQ2I4-&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "F" & ye == 2 & sem == 1 & material.getSelectedItem().toString().equals("امتحانات3")) {
+
+                                ur = "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/1w3BDN29exg0v6t2ZVZ7QoRRon_nvHzT1&service=writely";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "F" & ye == 2 & sem == 2 & material.getSelectedItem().toString().equals("امتحانات")) {
+
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F14VKt2K9_b_0ZKmZaRxzi7wB3et7-Iwtj&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "PH" & ye == 1 & sem == 1 & material.getSelectedItem().toString().equals("اخلاق - د/محروس")) {
+
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0Bx1TXZ-UjRgudXhJTUFHbXNteUU&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "PH" & ye == 2 & sem == 1 & material.getSelectedItem().toString().equals("تفكير علمى-د/منتصر")) {
+
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0Bx1TXZ-UjRguR3NFc20yczNRSms&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "PH" & ye == 2 & sem == 1 & material.getSelectedItem().toString().equals("رياضه")) {
+
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0Bx1TXZ-UjRguNmcydkVqYmJ3RG8&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "PH" & ye == 2 & sem == 1 & material.getSelectedItem().toString().equals("سياسه د/منتصر")) {
+
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0Bx1TXZ-UjRguaEpZekhHS3VXN2c&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "PH" & ye == 2 & sem == 1 & material.getSelectedItem().toString().equals("علم الكلام د/منتصر")) {
+
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0Bx1TXZ-UjRguOEg5cUsyYzFhaGM&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "S" & ye == 1 & sem == 1 & material.getSelectedItem().toString().equals("الاسس النظريه")) {
+
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0BzYYW8dU6VmadEtrenFDZkhjWjQ&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this,study.class);
+                                intent.putExtra("url", ur);
+                                startActivity (intent);
+
+                            } else if (dep == "S" & ye == 1 & sem == 1 & material.getSelectedItem().toString().equals("امتحانات")) {
+
+                                ur = "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0Bx1TXZ-UjRgudS1Rb3RpQU43LVE&service=writely";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "S" & ye == 1 & sem == 1 & material.getSelectedItem().toString().equals("تاريخ الفكر الاجتماعى")) {
+
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0BzYYW8dU6VmaZVQ4X18xQ1phbkU&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "S" & ye == 1 & sem == 1 & material.getSelectedItem().toString().equals("جغرافيا عامه")) {
+
+                                ur = "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0BzYYW8dU6VmaX0lYQXFUXzBQVTA&service=writely";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "S" & ye == 1 & sem == 1 & material.getSelectedItem().toString().equals("فلسفه عامه")) {
+
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0BzYYW8dU6VmabTZiSW5ZNVF3RHc&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "S" & ye == 1 & sem == 1 & material.getSelectedItem().toString().equals("لغه عربيه")) {
+
+                                ur = "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0BzYYW8dU6VmaZDhpTHBIcXlReU0&service=writely";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "S" & ye == 1 & sem == 1 & material.getSelectedItem().toString().equals("مدخل فى علم الاجتماع")) {
+
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1r7q3pqn16jwN7u8RoMxwPkAJ5WCFbhXv&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "S" & ye == 1 & sem == 2 & material.getSelectedItem().toString().equals("الاحصاء")) {
+
+                                ur = "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0BzYYW8dU6VmaZDhpTHBIcXlReU0&service=writely";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "S" & ye == 1 & sem == 2 & material.getSelectedItem().toString().equals("انثروبولوجيا")) {
+
+                                ur = "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0BzYYW8dU6VmaRk92VVBNbE1kc28&service=writely";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "S" & ye == 1 & sem == 2 & material.getSelectedItem().toString().equals("بناء المجتمع ونظمه")) {
+
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0BzYYW8dU6VmaWmtaRk9naVdSWnc&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "S" & ye == 1 & sem == 2 & material.getSelectedItem().toString().equals("علم السكان")) {
+
+                                ur = "https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://drive.google.com/drive/folders/0BzYYW8dU6Vmaem9TdGYwVDBWUnc&service=writely";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "S" & ye == 1 & sem == 2 & material.getSelectedItem().toString().equals("علم النفس")) {
+
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0BzYYW8dU6VmaZzlLeGhzWjNyX0k&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "S" & ye == 1 & sem == 2 & material.getSelectedItem().toString().equals("لغه انجليزيه")) {
+
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F0BzYYW8dU6VmaeWNITF96VXd6b2M&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this,study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
+                            } else if (dep == "S" & ye == 2 & sem == 1 & material.getSelectedItem().toString().equals("امتحانات ترم اول")) {
+
+                                ur = "https://accounts.google.com/signin/v2/sl/pwd?hl=ar&passive=true&continue=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1nwZxToYr7QGDcatbX0aqrKrh7P2HgWrW&service=writely&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+                                Intent intent = new Intent(MainActivity.this, study.class);
+                                intent.putExtra("url", ur);
+                                startActivity(intent);
+
                             }
                         }
                     }

@@ -6,8 +6,8 @@
     <string-array name="faculty">
         <item>Choose your Faculty....</item>
         <item>Petroleum and Mining Engineering Faculty</item>
-        <item>Science Faculty</item>
-        <item>Education Faculty</item>
+        <!--<item>Science Faculty</item>-->
+        <!--<item>Education Faculty</item>-->
         <item>Arts and Humanities science Faculty</item>
         <item>Computers and information </item>
         <item>Fish resources and marine studies </item>
